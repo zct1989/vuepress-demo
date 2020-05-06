@@ -1,0 +1,23 @@
+{
+    "name": "blog-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "vuepress dev ."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@vuepress/plugin-blog": "^1.9.2",
+        "less": "^3.11.1",
+        "less-loader": "^6.0.0",
+        "typescript": "^3.8.3",
+        "vue-property-decorator": "^8.4.2",
+        "vuepress": "^1.4.1",
+        "vuepress-plugin-reading-time": "^0.1.1",
+        "vuepress-plugin-typescript": "^0.2.0",
+        "vuepress-types": "^0.9.2"
+    }
+}

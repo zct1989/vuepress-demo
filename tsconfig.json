@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strictPropertyInitialization": true,
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                ".vuepress/*"
+            ],
+            "~/*": [
+                ".vuepress/*"
+            ]
+        },
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ],
+        "types": [
+            "vuepress-types"
+        ]
+    },
+    "include": [
+        ".vuepress/**/*.ts",
+        ".vuepress/**/*.tsx",
+        ".vuepress/**/*.vue",
+        "typings/**/*.d.ts",
+        "node_modules/vuepress-types/types/index.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
