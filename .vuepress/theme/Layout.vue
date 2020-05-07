@@ -1,7 +1,11 @@
 <template>
     <div class="theme-container">
         <PageHeader></PageHeader>
-        <PostList></PostList>
+        <div class="posts-container">
+            <div class="posts-wrapper">
+                <PostList></PostList>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -25,5 +29,17 @@ export default class extends Vue {}
 </style>
 
 <style lang="less">
+@import '../styles/common.less';
 @import '../styles/layout.less';
+</style>
+
+<style lang="less" scoped>
+.posts-container {
+    display: flex;
+    justify-content: center;
+
+    .posts-wrapper {
+        width: 1200px;
+    }
+}
 </style>

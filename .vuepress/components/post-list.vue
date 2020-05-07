@@ -27,15 +27,13 @@ export default class PostList extends Vue {
 }
 </script>
 
-<style lang="less">
-.page-header {
-    background-color: #fff;
-    height: 60px;
-    color: #000;
-
-    .title {
-        font-size: 18px;
-        font-weight: 500;
+<style lang="less" scoped>
+.post-list {
+    .post-item-wrapper {
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
     }
 }
 </style>

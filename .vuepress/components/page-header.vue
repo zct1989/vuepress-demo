@@ -1,7 +1,6 @@
 <template>
     <div class="page-header flex-row justify-content-around align-items-center">
         <div class="title">{{ this.$site.title }}</div>
-        <div></div>
     </div>
 </template>
 
