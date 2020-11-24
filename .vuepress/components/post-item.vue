@@ -30,12 +30,9 @@
 <script lang="ts">
 import { Component, Prop } from 'vue-property-decorator'
 import Vue from 'vue'
-import { UnsplashService } from '../shared/unsplash.service'
 
 @Component
 export default class PostItem extends Vue {
-    private unsplashService = new UnsplashService()
-
     @Prop()
     private source!: any
 

@@ -21,7 +21,7 @@ export default class PostList extends Vue {
     private tag
 
     private get posts() {
-        console.log(123, this.$page, 123)
+        console.log(this.$site.pages)
         return this.$site.pages.filter(item => !item.frontmatter.home)
     }
 }

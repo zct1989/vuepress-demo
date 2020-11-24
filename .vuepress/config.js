@@ -10,14 +10,17 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             {
-                text: 'Guide', items: [
+                text: 'Guide',
+                items: [
                     { text: 'Chinese', link: '/language/chinese/' },
                     { text: 'Japanese', link: '/language/japanese/' }
                 ]
             },
             {
-                text: 'External', link: 'https://google.com', target: '_blank'
-            },
+                text: 'External',
+                link: 'https://google.com',
+                target: '_blank'
+            }
         ],
         sidebar: 'auto',
         displayAllHeaders: true,
@@ -36,19 +39,22 @@ module.exports = {
             {
                 tsLoaderOptions: {
                     // ts-loader 的所有配置项
-                },
-            },
-        ],
-        ['vuepress-plugin-reading-time'],
-        ['@vuepress/last-updated', {
-            transformer: (timestamp, lang) => {
-                const moment = require('moment')
-                moment.locale(lang)
-                return moment(timestamp).fromNow()
-            },
-            dateOptions: {
-                hours12: false
+                }
             }
-        }]
+        ],
+        ['vuepress-plugin-reading-time']
+        // [
+        //     '@vuepress/last-updated',
+        //     {
+        //         transformer: (timestamp, lang) => {
+        //             const moment = require('moment')
+        //             moment.locale(lang)
+        //             return timestamp
+        //         },
+        //         dateOptions: {
+        //             hours12: false
+        //         }
+        //     }
+        // ]
     ]
 }
