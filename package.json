@@ -13,7 +13,6 @@
         "@vuepress/plugin-blog": "^1.9.2",
         "less": "^3.11.1",
         "less-loader": "^6.0.0",
-        "moment": "^2.25.3",
         "typescript": "^3.8.3",
         "vue-property-decorator": "^8.4.2",
         "vuepress": "^1.4.1",
@@ -22,6 +21,7 @@
         "vuepress-types": "^0.9.2"
     },
     "dependencies": {
+        "dayjs": "^1.9.6",
         "unsplash-js": "^6.0.0"
     }
 }

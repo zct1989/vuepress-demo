@@ -1,10 +1,11 @@
 // .vuepress/config.js
 module.exports = {
-    title: '前端研习室',
+    title: '紫菜苔de前端小馆',
     themeConfig: {
         repo: 'https://githjub.com/vuejs/vuepress',
         smoothScroll: true,
         logo: '/assets/img/logo.png',
+        avatar: '/avatar.jpg',
         search: true,
         lastUpdated: true,
         nav: [

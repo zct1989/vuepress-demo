@@ -1,7 +1,14 @@
 <template>
-    <div class="post-list flex-column justify-content-center">
-        <div class="post-item-wrapper" v-for="post of posts">
-            <PostItem :source="post"></PostItem>
+    <div class="post-list">
+        <!-- <div class="title">
+            文章列表
+        </div> -->
+        <div class="flex-row flex-wrap justify-content-start">
+            <div class="flex-basis-6" v-for="post of posts">
+                <div class="post-item-wrapper">
+                    <PostItem :source="post"></PostItem>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -29,11 +36,17 @@ export default class PostList extends Vue {
 
 <style lang="less" scoped>
 .post-list {
+    padding: 20px 10px;
+    .title {
+        padding: 20px;
+        font-size: 20px;
+        color: #fff;
+    }
     .post-item-wrapper {
-        margin: 20px;
+        margin: 10px;
+        background-color: #efefef;
         border-radius: 10px;
         overflow: hidden;
-        background-color: #fff;
     }
 }
 </style>

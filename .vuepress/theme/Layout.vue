@@ -1,23 +1,28 @@
 <template>
-    <div class="theme-container">
-        <PageHeader></PageHeader>
-        <div class="posts-container">
-            <div class="posts-wrapper">
-                <PostList></PostList>
-            </div>
+    <div class="theme-container flex-row">
+        <div class="sider-container">
+            <Slider></Slider>
+        </div>
+        <div class="post-container flex-auto">
+            <PostList></PostList>
+        </div>
+        <div class="daily-container">
+            <DailyList></DailyList>
         </div>
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import PageHeader from '../components/page-header.vue'
+import DailyList from '../components/daily-list.vue'
 import PostList from '../components/post-list.vue'
+import Slider from '../components/slider.vue'
 
 @Component({
     components: {
-        PageHeader,
-        PostList
+        DailyList,
+        PostList,
+        Slider
     }
 })
 export default class extends Vue {}
@@ -41,5 +46,8 @@ export default class extends Vue {}
     .posts-wrapper {
         width: 1200px;
     }
+}
+.daily-container {
+    flex-basis: 300px;
 }
 </style>
