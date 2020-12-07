@@ -22,6 +22,7 @@
     },
     "dependencies": {
         "dayjs": "^1.9.6",
+        "highlight.js": "^10.4.1",
         "unsplash-js": "^6.0.0"
     }
 }

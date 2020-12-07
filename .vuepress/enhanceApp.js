@@ -4,5 +4,8 @@ export default ({
     router, // 当前应用的路由实例
     siteData // 站点元数据
 }) => {
-    // ...做一些其他的应用级别的优化
+    import('highlight.js/styles/paraiso-dark.css')
+    import('highlight.js/lib/index.js').then(hljs => {
+        hljs.initHighlightingOnLoad()
+    })
 }

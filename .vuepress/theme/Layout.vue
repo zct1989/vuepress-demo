@@ -3,29 +3,47 @@
         <div class="sider-container">
             <Slider></Slider>
         </div>
-        <div class="post-container flex-auto">
-            <PostList></PostList>
-        </div>
-        <div class="daily-container">
-            <DailyList></DailyList>
-        </div>
+        <component :is="layout" class="flex-auto"></component>
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import DailyList from '../components/daily-list.vue'
-import PostList from '../components/post-list.vue'
+import Home from '../layouts/Home.vue'
+import Post from '../layouts/Post.vue'
+import Daily from '../layouts/Daily.vue'
 import Slider from '../components/slider.vue'
 
 @Component({
     components: {
-        DailyList,
-        PostList,
-        Slider
+        Slider,
+        Home,
+        Post,
+        Daily
     }
 })
-export default class extends Vue {}
+export default class extends Vue {
+    private readonly paths = [
+        {
+            type: 'daily',
+            path: '/docs/diaries'
+        },
+        {
+            type: 'post',
+            path: '/docs/posts'
+        },
+        {
+            type: 'home',
+            path: '/'
+        }
+    ]
+
+    get layout() {
+        const target = this.paths.find(x => this.$page.path.startsWith(x.path))
+
+        return target?.type || 'home'
+    }
+}
 </script>
 
 <style lang="stylus">
@@ -34,20 +52,7 @@ export default class extends Vue {}
 </style>
 
 <style lang="less">
+@import '~prismjs/themes/prism-tomorrow.css';
 @import '../styles/common.less';
 @import '../styles/layout.less';
-</style>
-
-<style lang="less" scoped>
-.posts-container {
-    display: flex;
-    justify-content: center;
-
-    .posts-wrapper {
-        width: 1200px;
-    }
-}
-.daily-container {
-    flex-basis: 300px;
-}
 </style>

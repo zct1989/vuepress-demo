@@ -28,8 +28,10 @@ export default class PostList extends Vue {
     private tag
 
     private get posts() {
-        console.log(this.$site.pages)
-        return this.$site.pages.filter(item => !item.frontmatter.home)
+        return this.$site.pages
+            .filter(item => !item.frontmatter.home)
+            .filter(x => x.path && x.path.startsWith('/docs/post'))
+            .sort((x, y) => (x.frontmatter.date > y.frontmatter.date ? -1 : 1))
     }
 }
 </script>

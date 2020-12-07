@@ -1,9 +1,9 @@
 <template>
     <div class="slider flex-column justify-content-center align-items-center">
-        <div class="avatar">
+        <div class="avatar" @click="redirectToHome">
             <img :src="$site.themeConfig.avatar" />
         </div>
-        <div class="title">
+        <div class="title" @click="redirectToHome">
             {{ $site.title }}
         </div>
     </div>
@@ -17,8 +17,10 @@ import Vue from 'vue'
 export default class PageHeader extends Vue {
     private src = ''
 
-    mounted() {
-        console.log(this.$site)
+    mounted() {}
+
+    private redirectToHome() {
+        this.$router.push('/')
     }
 }
 </script>
@@ -32,6 +34,7 @@ export default class PageHeader extends Vue {
             height: 100px;
             border-radius: 100%;
         }
+        cursor: pointer;
     }
 
     .title {

@@ -3,6 +3,7 @@
         <div class="flex-auto date-list flex-row flex-wrap" v-if="currentMonth">
             <div
                 class="date-item flex-row justify-content-center align-items-center"
+                @click="onEnter(item)"
                 v-for="item of currentMonth.diaries"
             >
                 {{ item.date.format('DD') }}
@@ -73,7 +74,8 @@ export default class DailyList extends Vue {
 
         return {
             date: dayjs(date),
-            title: date
+            title: date,
+            path
         }
     }
 
@@ -115,6 +117,10 @@ export default class DailyList extends Vue {
     private activeMonth(group) {
         this.currentMonth = group
     }
+
+    private onEnter({ path }) {
+        this.$router.push(path)
+    }
 }
 </script>
 
@@ -122,23 +128,27 @@ export default class DailyList extends Vue {
 .daily-list {
     padding: 20px 10px;
     .date-list {
+        align-content: flex-start;
         .date-item {
             margin: 10px;
             color: #fff;
-            background-color: red;
+            background-color: #fc5531;
             border-radius: 100%;
 
             width: 50px;
             height: 50px;
+            cursor: pointer;
         }
     }
     .month-list {
+        font-size: 18px;
+        font-weight: bold;
         .month {
             text-align: center;
             color: #fff;
             padding: 5px;
             &.active {
-                color: red;
+                color: #3eaf7c;
             }
         }
         .year {
@@ -146,7 +156,7 @@ export default class DailyList extends Vue {
             text-align: center;
             color: #fff;
             &.active {
-                color: red;
+                color: #3eaf7c;
             }
         }
     }

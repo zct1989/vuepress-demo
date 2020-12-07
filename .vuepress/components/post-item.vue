@@ -1,22 +1,21 @@
 <template>
     <div class="post-item">
-        <div>
+        <!-- TODO 封面 -->
+        <!-- <div>
             <img src="" />
-        </div>
-        <div class="title padding-y">
+        </div> -->
+        <div class="title padding-y" @click="onEnter">
             {{ source.title }}
         </div>
         <div class="update-time">
-            {{ source.lastUpdated }}
+            {{ getDate(source.frontmatter.date) }}
         </div>
+
         <div class="description">
-            <div v-if="source.frontmatter.description">
-                {{ source.frontmatter.description }}
-            </div>
-            <div v-else v-html="source.excerpt"></div>
+            {{ source.frontmatter.description || '' }}
         </div>
         <div class="action-container flex-row justify-content-between ">
-            <div class="read-action">
+            <div class="read-action" @click="onEnter">
                 <span>开始阅读</span>
             </div>
             <div class="read-info">
@@ -30,6 +29,7 @@
 <script lang="ts">
 import { Component, Prop } from 'vue-property-decorator'
 import Vue from 'vue'
+import dayjs from 'dayjs'
 
 @Component
 export default class PostItem extends Vue {
@@ -37,6 +37,14 @@ export default class PostItem extends Vue {
     private source!: any
 
     mounted() {}
+
+    private onEnter() {
+        this.$router.push(this.source.path)
+    }
+
+    private getDate(date) {
+        return dayjs(date).format('YYYY年MM月DD日 HH:MM')
+    }
 }
 </script>
 
@@ -52,10 +60,19 @@ export default class PostItem extends Vue {
         padding: 20px 0;
     }
 
+    .title {
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        height: 2rem;
+        padding-bottom: 25px;
+    }
+
     .action-container {
         padding: 20px 0 10px 0;
         .read-action {
             color: #e54d42;
+            cursor: pointer;
         }
     }
 }
