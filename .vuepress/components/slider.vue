@@ -20,7 +20,8 @@ export default class PageHeader extends Vue {
     mounted() {}
 
     private redirectToHome() {
-        this.$router.push('/')
+        location.href = '/'
+        // this.$router.push('/')
     }
 }
 </script>
