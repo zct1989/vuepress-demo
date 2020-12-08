@@ -39,7 +39,8 @@ export default class PostItem extends Vue {
     mounted() {}
 
     private onEnter() {
-        this.$router.push(this.source.path)
+         location.href = this.source.path
+        // this.$router.push(this.source.path)
     }
 
     private getDate(date) {

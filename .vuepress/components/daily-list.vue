@@ -119,7 +119,8 @@ export default class DailyList extends Vue {
     }
 
     private onEnter({ path }) {
-        this.$router.push(path)
+        location.href = path
+        // this.$router.push(path)
     }
 }
 </script>
