@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>[译]stylus文档翻译 - 2.选择器 | 紫菜苔de前端小馆</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.87941fce.css" as="style"><link rel="preload" href="/assets/js/app.7e25505e.js" as="script"><link rel="preload" href="/assets/js/3.4c456c83.js" as="script"><link rel="preload" href="/assets/js/117.628714f4.js" as="script"><link rel="prefetch" href="/assets/js/1.7f9baa1d.js"><link rel="prefetch" href="/assets/js/10.b3078e71.js"><link rel="prefetch" href="/assets/js/100.d8ae016d.js"><link rel="prefetch" href="/assets/js/101.f6577f56.js"><link rel="prefetch" href="/assets/js/102.24046e40.js"><link rel="prefetch" href="/assets/js/103.d5b9915f.js"><link rel="prefetch" href="/assets/js/104.6d9317fc.js"><link rel="prefetch" href="/assets/js/105.1c735d52.js"><link rel="prefetch" href="/assets/js/106.553f3416.js"><link rel="prefetch" href="/assets/js/107.2ff9089f.js"><link rel="prefetch" href="/assets/js/108.72334a91.js"><link rel="prefetch" href="/assets/js/109.ab5b89d9.js"><link rel="prefetch" href="/assets/js/11.48b38e03.js"><link rel="prefetch" href="/assets/js/110.c00c4692.js"><link rel="prefetch" href="/assets/js/111.054f232b.js"><link rel="prefetch" href="/assets/js/112.348fdc76.js"><link rel="prefetch" href="/assets/js/113.2666954c.js"><link rel="prefetch" href="/assets/js/114.8401f8aa.js"><link rel="prefetch" href="/assets/js/115.7a7040eb.js"><link rel="prefetch" href="/assets/js/116.4c68494b.js"><link rel="prefetch" href="/assets/js/118.2a187c2e.js"><link rel="prefetch" href="/assets/js/119.35c2bc90.js"><link rel="prefetch" href="/assets/js/12.443612ee.js"><link rel="prefetch" href="/assets/js/120.d049d227.js"><link rel="prefetch" href="/assets/js/121.48041260.js"><link rel="prefetch" href="/assets/js/122.8be84181.js"><link rel="prefetch" href="/assets/js/123.bf0e653c.js"><link rel="prefetch" href="/assets/js/124.44ed450f.js"><link rel="prefetch" href="/assets/js/125.09870bea.js"><link rel="prefetch" href="/assets/js/126.42a4886a.js"><link rel="prefetch" href="/assets/js/127.af7ff8a1.js"><link rel="prefetch" href="/assets/js/128.7291d4f2.js"><link rel="prefetch" href="/assets/js/129.c49e42e3.js"><link rel="prefetch" href="/assets/js/13.dadac269.js"><link rel="prefetch" href="/assets/js/130.e1ee2b4b.js"><link rel="prefetch" href="/assets/js/131.27c50567.js"><link rel="prefetch" href="/assets/js/132.79c2b4e0.js"><link rel="prefetch" href="/assets/js/133.df0574a4.js"><link rel="prefetch" href="/assets/js/134.f38f6bca.js"><link rel="prefetch" href="/assets/js/14.e80ad288.js"><link rel="prefetch" href="/assets/js/15.0f63582e.js"><link rel="prefetch" href="/assets/js/16.0b17d178.js"><link rel="prefetch" href="/assets/js/17.e0125a2a.js"><link rel="prefetch" href="/assets/js/18.8a42eed8.js"><link rel="prefetch" href="/assets/js/19.15a10742.js"><link rel="prefetch" href="/assets/js/20.b7b1d0f5.js"><link rel="prefetch" href="/assets/js/21.40791261.js"><link rel="prefetch" href="/assets/js/22.f2c95780.js"><link rel="prefetch" href="/assets/js/23.ac518c9f.js"><link rel="prefetch" href="/assets/js/24.1dae90a3.js"><link rel="prefetch" href="/assets/js/25.efc09146.js"><link rel="prefetch" href="/assets/js/26.ab86d874.js"><link rel="prefetch" href="/assets/js/27.e5f565e9.js"><link rel="prefetch" href="/assets/js/28.0469e9c4.js"><link rel="prefetch" href="/assets/js/29.a8de8547.js"><link rel="prefetch" href="/assets/js/30.c0475b4a.js"><link rel="prefetch" href="/assets/js/31.b5eb0553.js"><link rel="prefetch" href="/assets/js/32.9c19ae0e.js"><link rel="prefetch" href="/assets/js/33.b1ed7508.js"><link rel="prefetch" href="/assets/js/34.1e16e05c.js"><link rel="prefetch" href="/assets/js/35.293091db.js"><link rel="prefetch" href="/assets/js/36.252b615a.js"><link rel="prefetch" href="/assets/js/37.1cd8996a.js"><link rel="prefetch" href="/assets/js/38.167a82a3.js"><link rel="prefetch" href="/assets/js/39.33db9824.js"><link rel="prefetch" href="/assets/js/4.54882aa9.js"><link rel="prefetch" href="/assets/js/40.450d32a0.js"><link rel="prefetch" href="/assets/js/41.9287a314.js"><link rel="prefetch" href="/assets/js/42.141e28e4.js"><link rel="prefetch" href="/assets/js/43.8a75dd80.js"><link rel="prefetch" href="/assets/js/44.3ee27bf5.js"><link rel="prefetch" href="/assets/js/45.4a481968.js"><link rel="prefetch" href="/assets/js/46.856423a7.js"><link rel="prefetch" href="/assets/js/47.f5eecad5.js"><link rel="prefetch" href="/assets/js/48.bf2e2c37.js"><link rel="prefetch" href="/assets/js/49.9de65ad2.js"><link rel="prefetch" href="/assets/js/5.394b0d79.js"><link rel="prefetch" href="/assets/js/50.5717ea36.js"><link rel="prefetch" href="/assets/js/51.559ab86e.js"><link rel="prefetch" href="/assets/js/52.fa636028.js"><link rel="prefetch" href="/assets/js/53.855c5365.js"><link rel="prefetch" href="/assets/js/54.479224a9.js"><link rel="prefetch" href="/assets/js/55.82303205.js"><link rel="prefetch" href="/assets/js/56.06703298.js"><link rel="prefetch" href="/assets/js/57.834a7c69.js"><link rel="prefetch" href="/assets/js/58.38a6ec3d.js"><link rel="prefetch" href="/assets/js/59.d9b4b32f.js"><link rel="prefetch" href="/assets/js/6.c3665a69.js"><link rel="prefetch" href="/assets/js/60.f93eef75.js"><link rel="prefetch" href="/assets/js/61.fc7d627b.js"><link rel="prefetch" href="/assets/js/62.37562b69.js"><link rel="prefetch" href="/assets/js/63.71270651.js"><link rel="prefetch" href="/assets/js/64.13e7ae2c.js"><link rel="prefetch" href="/assets/js/65.1251d365.js"><link rel="prefetch" href="/assets/js/66.31ee93bf.js"><link rel="prefetch" href="/assets/js/67.66ee58aa.js"><link rel="prefetch" href="/assets/js/68.c00ea48a.js"><link rel="prefetch" href="/assets/js/69.06818970.js"><link rel="prefetch" href="/assets/js/7.6efe852a.js"><link rel="prefetch" href="/assets/js/70.c3da057f.js"><link rel="prefetch" href="/assets/js/71.4a192e57.js"><link rel="prefetch" href="/assets/js/72.66c8fbc5.js"><link rel="prefetch" href="/assets/js/73.faf61deb.js"><link rel="prefetch" href="/assets/js/74.e3a9223e.js"><link rel="prefetch" href="/assets/js/75.b72d7462.js"><link rel="prefetch" href="/assets/js/76.2cdf4ef4.js"><link rel="prefetch" href="/assets/js/77.8cd6514e.js"><link rel="prefetch" href="/assets/js/78.7ca132ea.js"><link rel="prefetch" href="/assets/js/79.41e2ac49.js"><link rel="prefetch" href="/assets/js/8.53b5f5e2.js"><link rel="prefetch" href="/assets/js/80.13b4e376.js"><link rel="prefetch" href="/assets/js/81.dd6a6ef0.js"><link rel="prefetch" href="/assets/js/82.09201718.js"><link rel="prefetch" href="/assets/js/83.4605bf24.js"><link rel="prefetch" href="/assets/js/84.44fd975f.js"><link rel="prefetch" href="/assets/js/85.e5dc6b5f.js"><link rel="prefetch" href="/assets/js/86.0e2bc0cc.js"><link rel="prefetch" href="/assets/js/87.6373beea.js"><link rel="prefetch" href="/assets/js/88.43f718d2.js"><link rel="prefetch" href="/assets/js/89.59462d75.js"><link rel="prefetch" href="/assets/js/9.72eda18e.js"><link rel="prefetch" href="/assets/js/90.8136b873.js"><link rel="prefetch" href="/assets/js/91.3216e3ce.js"><link rel="prefetch" href="/assets/js/92.94ec4c29.js"><link rel="prefetch" href="/assets/js/93.712e48a3.js"><link rel="prefetch" href="/assets/js/94.a674e097.js"><link rel="prefetch" href="/assets/js/95.e365ad29.js"><link rel="prefetch" href="/assets/js/96.eb2961b1.js"><link rel="prefetch" href="/assets/js/97.cf9e240e.js"><link rel="prefetch" href="/assets/js/98.37ffbc3f.js"><link rel="prefetch" href="/assets/js/99.ad9f19e6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.87941fce.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container flex-row"><div class="sider-container"><div class="slider flex-column justify-content-center align-items-center"><div class="avatar"><img src="/avatar.jpg"></div> <div class="title">
+        紫菜苔de前端小馆
+    </div></div></div> <div class="post-container flex-auto" data-v-5185f74d><div class="title-container" data-v-5185f74d><div class="title" data-v-5185f74d>[译]stylus文档翻译 - 2.选择器</div> <div class="date" data-v-5185f74d>2017年11月01日 19:11</div></div> <div class="content-container" data-v-5185f74d><div class="content__default" data-v-5185f74d><h1 id="选择器"><a href="#选择器" class="header-anchor">#</a> 选择器</h1> <h2 id="缩进"><a href="#缩进" class="header-anchor">#</a> 缩进</h2> <p>Stylus看起来很神奇(因为缩进).在这里空格尤其重要，因为我们用缩进和减少缩进来替代了 <code>{</code> 和 <code>}</code> ,就像下面的代码:</p> <div class="language- extra-class"><pre class="language-text"><code>body
+    color white
+</code></pre></div><p>它会编译成这样：</p> <div class="language- extra-class"><pre class="language-text"><code>body
+    color:#fff
+</code></pre></div><p>如果你愿意，你也可以使用毛和来分隔属性和值</p> <div class="language- extra-class"><pre class="language-text"><code>body
+    color:white
+</code></pre></div> <h2 id="规则集"><a href="#规则集" class="header-anchor">#</a> 规则集</h2> <p>Stylus也和CSS一样，允许你使用逗号分隔来为多个选择器定义属性.</p> <div class="language- extra-class"><pre class="language-text"><code>textarea,input
+    border 1px solid #eee
+</code></pre></div><p>使用新行也是一样</p> <div class="language- extra-class"><pre class="language-text"><code>textarea
+input
+    border 1px solid #eee
+</code></pre></div><p>唯一例外的情况是那些看起来像属性的选择器。例如<code>foo bar baz</code>可能是一个属性或是一个选择器</p> <div class="language- extra-class"><pre class="language-text"><code>foo bar baz
+&gt;input
+    border 1px solid
+</code></pre></div><p>因为这个原因，我们可能需要在结尾加上一个逗号：</p> <div class="language- extra-class"><pre class="language-text"><code>foo bar baz,
+form input,
+&gt; a
+    border 1px solid
+</code></pre></div><h2 id="父集引用"><a href="#父集引用" class="header-anchor">#</a> 父集引用</h2> <p><code>&amp;</code>符号将引用父选择器。下面的例子中，两个选择器(<code>textarea</code>和<code>input</code>)会在<code>:hover</code>伪类选择器上都更新<code>color</code>值。</p> <div class="language- extra-class"><pre class="language-text"><code>textarea
+input
+    color #A7A7A7
+    &amp;:hover
+        color #000
+</code></pre></div><p>会被编译为：</p> <div class="language- extra-class"><pre class="language-text"><code>textarea,
+input{
+    color:#A7A7A7;
+}
+
+textarea:hover,
+input:hover{
+    color：#000
+}
+</code></pre></div><p>下面这里例子，将在混合书写中使用父集引用在IE浏览器下实现一个<code>2px</code>的边框：</p> <div class="language- extra-class"><pre class="language-text"><code>box-shadow()
+    -webkit-box-shadow arguments
+    -moz-box-shadow arguments
+    -box-shadow arguments
+    html.ie8 &amp;,
+    html.ie7 &amp;,
+    html.ie6 &amp;
+        border 2px solid arguments[length(arguments)-1]
+
+body
+    #login
+    box-shadow 1px 1px 3px #eee
+</code></pre></div><p>会变成这个样子：</p> <div class="language- extra-class"><pre class="language-text"><code>body #login{
+    -webkit-box-shadow: 1px 1px 3px #eee;
+    -moz-box-shadow: 1px 1px 3px #eee;
+    box-shadow: 1px 1px 3px #eee;
+}
+
+html.ie8 body #login,
+html.ie7 body #login,
+html.ie6 body #login {
+    border: 2px solid #eee;
+}
+</code></pre></div><p>如何你不需要<code>&amp;</code>在选择器之外也像一个父引用一样，你可以使用这样来避免:</p> <div class="language- extra-class"><pre class="language-text"><code>.foo[title*=‘\&amp;']
+//=&gt; .foo[title*='&amp;']
+</code></pre></div><h2 id="部分引用"><a href="#部分引用" class="header-anchor">#</a> 部分引用</h2> <p><code>^[N]</code>出现在选择器的任意位置，<code>N</code>是一个数字，表示一个部分引用。
+部分引用用法向父集引用一样，但是父引用包含着整个选择器，而部分引用仅包含着嵌套选择器的第<code>N</code>级，所以你可以单独引用潜逃中的某个级别。
+<code>^[0]</code>将获取到第一级选择器，<code>^[1]</code>将获取到第二级选择器元素，以此类推:</p> <div class="language- extra-class"><pre class="language-text"><code>.foo
+    &amp;_bar
+        width:10ox
+
+        ^[0]:forver &amp;
+            width:20px
+</code></pre></div><p>这将被渲染为:</p> <div class="language- extra-class"><pre class="language-text"><code>.foo_bar{
+    width:10px;
+}
+
+.foo:hover .foo_bar{
+    width:20px;
+}
+</code></pre></div><p>负值将从结尾开始结算,所以<code>^[-1]</code>将返回<code>&amp;</code>链前的最后一个选择器:</p> <div class="language- extra-class"><pre class="language-text"><code>.foo
+    &amp;_bar
+        &amp;_baz
+            width:10px
+
+            ^[-1]:hover &amp;
+            width:20px
+</code></pre></div><p>这将被渲染为:</p> <div class="language- extra-class"><pre class="language-text"><code>.foo_bar_baz{
+    width:10px;
+}
+.foo_bar:hove .foo_bar_baz{
+    width：20;
+}
+</code></pre></div><p>在回合书写中，当你不知道嵌套级别的时候，负值会是特别有用的用法去帮你找到它。</p> <p><em>请记住部分引用在你给出获取的嵌套级别之前他将包含整个选择器渲染链，而不是选择器的一部分</em></p> <h2 id="部分引用中的范围"><a href="#部分引用中的范围" class="header-anchor">#</a> 部分引用中的范围</h2> <p><code>^[N..M]</code>出现在选择器的任何位置，<code>N</code>和<code>M</code>是一个数字，表示一个部分引用。</p> <p>如果你有这种情况，当你需要去获取选择其中的部分或者获取这个范围的部分程序，你可能需要在部分引用中使用范围。</p> <p>如果范围从正值开始，这结果将不包含先前级别的选择器，你获得的结果中那些级别的选择器会被插入到根部并忽略组合(<em>翻译的不一定正确</em>)。</p> <div class="language- extra-class"><pre class="language-text"><code>.foo
+    &amp; .bar
+        width：10px
+    
+        ^[0]:hover ^[1..-1]
+            width:20px
+</code></pre></div><p>它将会渲染为:</p> <div class="language- extra-class"><pre class="language-text"><code>.foo .bar{
+    width:10px;
+}
+.foo:hover .bar{
+    width:20px;
+}
+</code></pre></div><p>在这范围中一个数据会作为开始位置，另一个是结束位置，注意的是那些数字的顺序其实是无所谓的，他总会被从小到大进行渲染，如<code>^[1..-1]</code>和<code>^[-1..1]</code>是等同的。</p> <p>当两个数字相等时，结果将会仅获取选择气的一级，所以在上个例子中你可以用<code>^[-1..-1]</code>代替<code>^[1..-1]</code>，它们都会返回最后一级选择器，如果在混合书写中使用它你会觉得更加可靠。</p> <h2 id="初始引用"><a href="#初始引用" class="header-anchor">#</a> 初始引用</h2> <p><code>~/</code>符号在选择器的开始会被只想选择器嵌套的开始，可以认为他是<code>^[0]</code>的快捷方式。唯一的缺点就是你仅可以在选择器的开始使用它。</p> <div class="language- extra-class"><pre class="language-text"><code>.block
+    &amp;_element
+        ~/:hover &amp;
+            color:red
+</code></pre></div><p>会被渲染为:</p> <div class="language- extra-class"><pre class="language-text"><code>.block:hover .block_element{
+    color:#foo
+}
+</code></pre></div><h2 id="相对引用"><a href="#相对引用" class="header-anchor">#</a> 相对引用</h2> <p>以<code>../</code>符号开始的选择器被认为是一个相对引用，它会指向<code>&amp;</code>符号之前的一层的选择器。你也可以使用嵌套的相对引用:<code>../../</code>来获取更深层次的引用，但是需要注意的是它仅可以被用在选择器的开始位置。</p> <div class="language- extra-class"><pre class="language-text"><code>.foo
+    .bar
+        width:10
+    &amp;,
+    ../ .baz
+        height:10px
+</code></pre></div><p>将会渲染为:</p> <div class="language- extra-class"><pre class="language-text"><code>.foo .bar{
+    width:10px;
+}
+
+.foo .bar{
+    width:10px;
+}
+.foo .bar,
+.foo .baz{
+    height:10px;
+}
+</code></pre></div><p>相对引用可以认为是带范围的部分引用的快捷方式类似<code>^[0..(N+1)]</code>这里<code>N</code>相对引用中的数字。(<em>总觉得不太对有些问题</em>)</p> <h2 id="根引用"><a href="#根引用" class="header-anchor">#</a> 根引用</h2> <p><code>/</code>符号出现在选择器的开始被认为是一个根引用，它会引用根上下文，这意味着不会将父选择器添加到它上面(除非你和&amp;一起使用).当你需要为默写嵌套选择器和另外的选择器写入一些样式时，它会很有帮助。</p> <div class="language- extra-class"><pre class="language-text"><code>textarea
+input
+    color #A7A7A7
+    &amp;:hover,
+    /.is-hovered
+        color #000
+</code></pre></div><p>编译后:</p> <div class="language- extra-class"><pre class="language-text"><code>textarea,
+inpu{
+    color:#a7a7a7;
+}
+
+textarea:hover,
+input:hover，
+.is-hovered{
+    color：#000
+}
+</code></pre></div><h2 id="selector-内置函数"><a href="#selector-内置函数" class="header-anchor">#</a> selector() 内置函数</h2> <p>你可以使用内置函数<code>selector()</code>去获取当前编译的选择器。可以使用在混合书写中去做检查或者其他有趣的事情。</p> <div class="language- extra-class"><pre class="language-text"><code>.foo
+    selector()
+//=&gt;‘.foo'
+
+.foo
+    &amp;：hover
+        selector()
+//'.foo:hover'
+</code></pre></div><p>这个内置函数可以传入可选的字符串参数,这种情况下它会返回编译好的选择器。注意的是如果没有<code>&amp;</code>符号的话，他将不受当前选择器作用域的影响。</p> <div class="language- extra-class"><pre class="language-text"><code>.foo
+    selector('.bar')
+//=&gt;'.bar'
+
+.foo
+    selector('&amp;:hover')
+//’.foo:hover'
+</code></pre></div><h2 id="多参数值的selector内置函数"><a href="#多参数值的selector内置函数" class="header-anchor">#</a> 多参数值的selector内置函数</h2> <p>selector()内置函数可以通过传入多参数值或逗号分隔的列表去更方便快捷的创建嵌套选择器。</p> <div class="language- extra-class"><pre class="language-text"><code>{selector('.a','.b','.c,.d')}
+    color:red
+</code></pre></div><p>等同于:</p> <div class="language- extra-class"><pre class="language-text"><code>.a
+    .b
+        .c,
+        .d
+            color:red
+</code></pre></div><p>它会被渲染为:</p> <div class="language- extra-class"><pre class="language-text"><code>.a .b .c,
+.a .b .d{
+    color:#f00
+}
+</code></pre></div><h2 id="selectors-内置函数"><a href="#selectors-内置函数" class="header-anchor">#</a> selectors() 内置函数</h2> <p>这个内置函数会返回当前层级的嵌入选择器的逗号列表分隔的内容。</p> <div class="language- extra-class"><pre class="language-text"><code>.a
+    .b
+        &amp;_c
+            content:selectors()
+</code></pre></div><p>编译为:</p> <div class="language- extra-class"><pre class="language-text"><code>.a .b_c{
+    content:'.a','&amp; .b','&amp;_c'
+}
+</code></pre></div><h2 id="消除分歧"><a href="#消除分歧" class="header-anchor">#</a> 消除分歧</h2> <p>像<code>margin -n</code>这样的表达式中<code>-n</code>可能会被解释为一个减法运算，也可能解释成一个一元运算符，为了避免这种分歧，需要用括号包裹住表达式:</p> <div class="language- extra-class"><pre class="language-text"><code>pad(n)
+    margin (-n)
+
+body
+    pad(5px)
+</code></pre></div><p>编译为:</p> <div class="language- extra-class"><pre class="language-text"><code>body{
+    margin:-5px;
+}
+</code></pre></div><p>但是仅在函数中会这样(因为函数用返回值同时扮演着混合和回调)。</p> <p>下面这个例子，就是正常的（和上面一样的结果）:</p> <div class="language- extra-class"><pre class="language-text"><code>body
+    margin -5px
+</code></pre></div><p>如果有Stylus无法处理的属性值，那么<code>unquote</code>会帮到你:</p> <div class="language- extra-class"><pre class="language-text"><code>filter unquote('progid:DXImageTransform.Microsoft.BasicImage(rotation=1)')
+</code></pre></div><p>生成为:</p> <div class="language- extra-class"><pre class="language-text"><code>filter progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
+</code></pre></div></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7e25505e.js" defer></script><script src="/assets/js/3.4c456c83.js" defer></script><script src="/assets/js/117.628714f4.js" defer></script>
+  </body>
+</html>

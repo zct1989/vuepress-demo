@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>少年啊,使用Less来打造你前端样式的武器库吧! - (1)基础样式篇 | 紫菜苔de前端小馆</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.87941fce.css" as="style"><link rel="preload" href="/assets/js/app.7e25505e.js" as="script"><link rel="preload" href="/assets/js/3.4c456c83.js" as="script"><link rel="preload" href="/assets/js/98.37ffbc3f.js" as="script"><link rel="prefetch" href="/assets/js/1.7f9baa1d.js"><link rel="prefetch" href="/assets/js/10.b3078e71.js"><link rel="prefetch" href="/assets/js/100.d8ae016d.js"><link rel="prefetch" href="/assets/js/101.f6577f56.js"><link rel="prefetch" href="/assets/js/102.24046e40.js"><link rel="prefetch" href="/assets/js/103.d5b9915f.js"><link rel="prefetch" href="/assets/js/104.6d9317fc.js"><link rel="prefetch" href="/assets/js/105.1c735d52.js"><link rel="prefetch" href="/assets/js/106.553f3416.js"><link rel="prefetch" href="/assets/js/107.2ff9089f.js"><link rel="prefetch" href="/assets/js/108.72334a91.js"><link rel="prefetch" href="/assets/js/109.ab5b89d9.js"><link rel="prefetch" href="/assets/js/11.48b38e03.js"><link rel="prefetch" href="/assets/js/110.c00c4692.js"><link rel="prefetch" href="/assets/js/111.054f232b.js"><link rel="prefetch" href="/assets/js/112.348fdc76.js"><link rel="prefetch" href="/assets/js/113.2666954c.js"><link rel="prefetch" href="/assets/js/114.8401f8aa.js"><link rel="prefetch" href="/assets/js/115.7a7040eb.js"><link rel="prefetch" href="/assets/js/116.4c68494b.js"><link rel="prefetch" href="/assets/js/117.628714f4.js"><link rel="prefetch" href="/assets/js/118.2a187c2e.js"><link rel="prefetch" href="/assets/js/119.35c2bc90.js"><link rel="prefetch" href="/assets/js/12.443612ee.js"><link rel="prefetch" href="/assets/js/120.d049d227.js"><link rel="prefetch" href="/assets/js/121.48041260.js"><link rel="prefetch" href="/assets/js/122.8be84181.js"><link rel="prefetch" href="/assets/js/123.bf0e653c.js"><link rel="prefetch" href="/assets/js/124.44ed450f.js"><link rel="prefetch" href="/assets/js/125.09870bea.js"><link rel="prefetch" href="/assets/js/126.42a4886a.js"><link rel="prefetch" href="/assets/js/127.af7ff8a1.js"><link rel="prefetch" href="/assets/js/128.7291d4f2.js"><link rel="prefetch" href="/assets/js/129.c49e42e3.js"><link rel="prefetch" href="/assets/js/13.dadac269.js"><link rel="prefetch" href="/assets/js/130.e1ee2b4b.js"><link rel="prefetch" href="/assets/js/131.27c50567.js"><link rel="prefetch" href="/assets/js/132.79c2b4e0.js"><link rel="prefetch" href="/assets/js/133.df0574a4.js"><link rel="prefetch" href="/assets/js/134.f38f6bca.js"><link rel="prefetch" href="/assets/js/14.e80ad288.js"><link rel="prefetch" href="/assets/js/15.0f63582e.js"><link rel="prefetch" href="/assets/js/16.0b17d178.js"><link rel="prefetch" href="/assets/js/17.e0125a2a.js"><link rel="prefetch" href="/assets/js/18.8a42eed8.js"><link rel="prefetch" href="/assets/js/19.15a10742.js"><link rel="prefetch" href="/assets/js/20.b7b1d0f5.js"><link rel="prefetch" href="/assets/js/21.40791261.js"><link rel="prefetch" href="/assets/js/22.f2c95780.js"><link rel="prefetch" href="/assets/js/23.ac518c9f.js"><link rel="prefetch" href="/assets/js/24.1dae90a3.js"><link rel="prefetch" href="/assets/js/25.efc09146.js"><link rel="prefetch" href="/assets/js/26.ab86d874.js"><link rel="prefetch" href="/assets/js/27.e5f565e9.js"><link rel="prefetch" href="/assets/js/28.0469e9c4.js"><link rel="prefetch" href="/assets/js/29.a8de8547.js"><link rel="prefetch" href="/assets/js/30.c0475b4a.js"><link rel="prefetch" href="/assets/js/31.b5eb0553.js"><link rel="prefetch" href="/assets/js/32.9c19ae0e.js"><link rel="prefetch" href="/assets/js/33.b1ed7508.js"><link rel="prefetch" href="/assets/js/34.1e16e05c.js"><link rel="prefetch" href="/assets/js/35.293091db.js"><link rel="prefetch" href="/assets/js/36.252b615a.js"><link rel="prefetch" href="/assets/js/37.1cd8996a.js"><link rel="prefetch" href="/assets/js/38.167a82a3.js"><link rel="prefetch" href="/assets/js/39.33db9824.js"><link rel="prefetch" href="/assets/js/4.54882aa9.js"><link rel="prefetch" href="/assets/js/40.450d32a0.js"><link rel="prefetch" href="/assets/js/41.9287a314.js"><link rel="prefetch" href="/assets/js/42.141e28e4.js"><link rel="prefetch" href="/assets/js/43.8a75dd80.js"><link rel="prefetch" href="/assets/js/44.3ee27bf5.js"><link rel="prefetch" href="/assets/js/45.4a481968.js"><link rel="prefetch" href="/assets/js/46.856423a7.js"><link rel="prefetch" href="/assets/js/47.f5eecad5.js"><link rel="prefetch" href="/assets/js/48.bf2e2c37.js"><link rel="prefetch" href="/assets/js/49.9de65ad2.js"><link rel="prefetch" href="/assets/js/5.394b0d79.js"><link rel="prefetch" href="/assets/js/50.5717ea36.js"><link rel="prefetch" href="/assets/js/51.559ab86e.js"><link rel="prefetch" href="/assets/js/52.fa636028.js"><link rel="prefetch" href="/assets/js/53.855c5365.js"><link rel="prefetch" href="/assets/js/54.479224a9.js"><link rel="prefetch" href="/assets/js/55.82303205.js"><link rel="prefetch" href="/assets/js/56.06703298.js"><link rel="prefetch" href="/assets/js/57.834a7c69.js"><link rel="prefetch" href="/assets/js/58.38a6ec3d.js"><link rel="prefetch" href="/assets/js/59.d9b4b32f.js"><link rel="prefetch" href="/assets/js/6.c3665a69.js"><link rel="prefetch" href="/assets/js/60.f93eef75.js"><link rel="prefetch" href="/assets/js/61.fc7d627b.js"><link rel="prefetch" href="/assets/js/62.37562b69.js"><link rel="prefetch" href="/assets/js/63.71270651.js"><link rel="prefetch" href="/assets/js/64.13e7ae2c.js"><link rel="prefetch" href="/assets/js/65.1251d365.js"><link rel="prefetch" href="/assets/js/66.31ee93bf.js"><link rel="prefetch" href="/assets/js/67.66ee58aa.js"><link rel="prefetch" href="/assets/js/68.c00ea48a.js"><link rel="prefetch" href="/assets/js/69.06818970.js"><link rel="prefetch" href="/assets/js/7.6efe852a.js"><link rel="prefetch" href="/assets/js/70.c3da057f.js"><link rel="prefetch" href="/assets/js/71.4a192e57.js"><link rel="prefetch" href="/assets/js/72.66c8fbc5.js"><link rel="prefetch" href="/assets/js/73.faf61deb.js"><link rel="prefetch" href="/assets/js/74.e3a9223e.js"><link rel="prefetch" href="/assets/js/75.b72d7462.js"><link rel="prefetch" href="/assets/js/76.2cdf4ef4.js"><link rel="prefetch" href="/assets/js/77.8cd6514e.js"><link rel="prefetch" href="/assets/js/78.7ca132ea.js"><link rel="prefetch" href="/assets/js/79.41e2ac49.js"><link rel="prefetch" href="/assets/js/8.53b5f5e2.js"><link rel="prefetch" href="/assets/js/80.13b4e376.js"><link rel="prefetch" href="/assets/js/81.dd6a6ef0.js"><link rel="prefetch" href="/assets/js/82.09201718.js"><link rel="prefetch" href="/assets/js/83.4605bf24.js"><link rel="prefetch" href="/assets/js/84.44fd975f.js"><link rel="prefetch" href="/assets/js/85.e5dc6b5f.js"><link rel="prefetch" href="/assets/js/86.0e2bc0cc.js"><link rel="prefetch" href="/assets/js/87.6373beea.js"><link rel="prefetch" href="/assets/js/88.43f718d2.js"><link rel="prefetch" href="/assets/js/89.59462d75.js"><link rel="prefetch" href="/assets/js/9.72eda18e.js"><link rel="prefetch" href="/assets/js/90.8136b873.js"><link rel="prefetch" href="/assets/js/91.3216e3ce.js"><link rel="prefetch" href="/assets/js/92.94ec4c29.js"><link rel="prefetch" href="/assets/js/93.712e48a3.js"><link rel="prefetch" href="/assets/js/94.a674e097.js"><link rel="prefetch" href="/assets/js/95.e365ad29.js"><link rel="prefetch" href="/assets/js/96.eb2961b1.js"><link rel="prefetch" href="/assets/js/97.cf9e240e.js"><link rel="prefetch" href="/assets/js/99.ad9f19e6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.87941fce.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container flex-row"><div class="sider-container"><div class="slider flex-column justify-content-center align-items-center"><div class="avatar"><img src="/avatar.jpg"></div> <div class="title">
+        紫菜苔de前端小馆
+    </div></div></div> <div class="post-container flex-auto" data-v-5185f74d><div class="title-container" data-v-5185f74d><div class="title" data-v-5185f74d>少年啊,使用Less来打造你前端样式的武器库吧! - (1)基础样式篇</div> <div class="date" data-v-5185f74d>2020年11月28日 00:11</div></div> <div class="content-container" data-v-5185f74d><div class="content__default" data-v-5185f74d><p>我们很多时候会使用一些样式库来快捷实现css样式的使用以及重用, 以此来方便我们开发UI. 但是我们也可以Less来打造自己的前端样式库,作为自己的弹药库方便之后的项目开发.</p> <p>下面我们一起来创建一个用于日常项目开发的样式弹药库吧!</p> <h4 id="字体大小"><a href="#字体大小" class="header-anchor">#</a> 字体大小</h4> <hr> <p>通过创建字体大小的样式可以方便我们快捷设置字体大小,我们可以按照自己的需要使用自定义的字体大小.</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@min-font-size<span class="token punctuation">:</span></span> 10<span class="token punctuation">;</span>
+<span class="token variable">@max-font-size<span class="token punctuation">:</span></span> 80<span class="token punctuation">;</span>
+
+<span class="token selector">.font-size-loop(<span class="token variable">@n</span>, <span class="token variable">@i</span>:<span class="token variable">@min-font-size</span>) when (<span class="token variable">@i</span> &lt;= <span class="token variable">@n</span>)</span> <span class="token punctuation">{</span>
+    <span class="token selector">.font-size-@{i}</span> <span class="token punctuation">{</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 1px <span class="token operator">*</span> <span class="token variable">@i</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    .<span class="token function">font-size-loop</span><span class="token punctuation">(</span><span class="token variable">@n</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.<span class="token function">font-size-loop</span><span class="token punctuation">(</span><span class="token variable">@max-font-size</span><span class="token punctuation">)</span>
+</code></pre></div><p>我们使用<code>@min-font-size</code>和<code>@max-font-size</code>来指定需要生成的最大字体和最小字体,可以通过<code>1px * @i</code>将对应的<code>index</code>转换为<code>px</code>的单位值,然后通过<code>less</code>来遍历生成我们需要的字体大小样式即可.</p> <p>这样我们就可以直接使用<code>font-size-{number}</code>来设置字体大小了</p> <div class="language-html extra-class"><pre class="language-html"><code>&lt;div class=&quot;font-size-14&gt;屠龙吧,少年<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="常用字体大小设置"><a href="#常用字体大小设置" class="header-anchor">#</a> 常用字体大小设置</h4> <hr> <p>除了设置自定义字体大小,我们一般需要设置常用字体大小,来保持我们在很多地方的字体大小的一致性.</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@size<span class="token punctuation">:</span></span> small<span class="token punctuation">,</span> default<span class="token punctuation">,</span> large<span class="token punctuation">;</span>
+<span class="token variable">@font-size-value<span class="token punctuation">:</span></span> 10px<span class="token punctuation">,</span> 14px<span class="token punctuation">,</span> 18px<span class="token punctuation">;</span>
+
+<span class="token selector">.font-size-iterate(<span class="token variable">@data</span>, <span class="token variable">@i</span>: 1) when(<span class="token variable">@i</span> =&lt; length(<span class="token variable">@data</span>))</span> <span class="token punctuation">{</span>
+    <span class="token variable">@item<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">@value<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@font-size-value</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token selector">.font-size-@{item}</span> <span class="token punctuation">{</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    .<span class="token function">font-size-iterate</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.<span class="token function">font-size-iterate</span><span class="token punctuation">(</span><span class="token variable">@size</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>通过设置了<code>@font-size-keys</code>和<code>@font-size-value</code>我们指定了常用的<code>small</code>,<code>default</code>,<code>large</code>三种类型的字体大小,通过less遍历<code>@font-size-keys</code>,然后取出对应的<code>@font-size-value</code>的值即可设置对应类型的字体大小.</p> <p>这样我们就可以直接使用<code>font-size-{small | normal | large}</code>来设置字体大小了</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>font-size-small&gt;屠龙吧,少年&lt;/div&gt;
+&lt;div class=<span class="token punctuation">&quot;</span></span><span class="token attr-name">font-size-default</span><span class="token punctuation">&gt;</span></span>屠龙吧,中年<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+&lt;div class=&quot;font-size-large&gt;屠龙吧,老年<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="字体粗细设置"><a href="#字体粗细设置" class="header-anchor">#</a> 字体粗细设置</h4> <hr> <p>我们按照上面的方法可以继续设置字体的粗细.</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token comment">// #region font-weight-loop</span>
+<span class="token variable">@min-font-weight<span class="token punctuation">:</span></span> 100<span class="token punctuation">;</span>
+<span class="token variable">@max-font-weight<span class="token punctuation">:</span></span> 700<span class="token punctuation">;</span>
+
+<span class="token selector">.font-weight-loop(<span class="token variable">@n</span>, <span class="token variable">@i</span>: <span class="token variable">@min-font-weight</span>) when(<span class="token variable">@i</span> =&lt; <span class="token variable">@n</span>)</span> <span class="token punctuation">{</span>
+    <span class="token selector">.font-weight-@{i}</span> <span class="token punctuation">{</span>
+        <span class="token property">font-weight</span><span class="token punctuation">:</span> <span class="token variable">@i</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    .<span class="token function">font-weight-loop</span><span class="token punctuation">(</span><span class="token variable">@n</span><span class="token punctuation">,</span><span class="token variable">@i</span> <span class="token operator">+</span> 100<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+.<span class="token function">font-weight-loop</span><span class="token punctuation">(</span><span class="token variable">@max-font-weight</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// #endregion</span>
+
+<span class="token variable">@weight<span class="token punctuation">:</span></span>  lighter bold bolder<span class="token punctuation">;</span>
+
+<span class="token selector">.font-weight(<span class="token variable">@data</span>, <span class="token variable">@i</span>: 1) when(<span class="token variable">@i</span> =&lt; length(<span class="token variable">@data</span>))</span> <span class="token punctuation">{</span>
+    <span class="token variable">@item<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token selector">.font-weight-@{item}</span> <span class="token punctuation">{</span>
+        <span class="token property">font-weight</span><span class="token punctuation">:</span> <span class="token variable">@item</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    .<span class="token function">font-weight</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+.<span class="token function">font-weight</span><span class="token punctuation">(</span><span class="token variable">@weight</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>类似之前的方法,我们就得到了<code>font-weight-{number}</code>和<code>font-weight-{ lighter | bold | bolder }</code>开设置字体的粗细.</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>font-weight-400&gt;屠龙吧,400&lt;/div&gt;
+&lt;div class=<span class="token punctuation">&quot;</span></span><span class="token attr-name">font-weight-lighter</span><span class="token punctuation">&gt;</span></span>屠龙吧,lighter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="布局设置-margin-padding"><a href="#布局设置-margin-padding" class="header-anchor">#</a> 布局设置(Margin&amp;Padding)</h4> <hr> <p>为了方便使用我们可以设计一个我们习惯的布局样式规则,比如</p> <div class="language- extra-class"><pre class="language-text"><code>{margin|padding}-{direction}-{size}
+</code></pre></div><ul><li>第一位我们表示是使用margin还是padding</li> <li>第二位我们表示是具体使用Margin或Padding的方向</li> <li>第三位我们表示是需要设置的大小</li></ul> <p>好了,这样我们就可以把常见的Margin或Padding使用统一的方式表示.为了简短我们在样式中把<code>Padding</code>写作<code>p</code>,把<code>Margin</code>写作<code>m</code>,方向我们使用<code>l,r,t,b,x,y,a</code>分别来代表<code>left,right,top,bottom,horizontal,vertical,all</code>.</p> <div class="language- extra-class"><pre class="language-text"><code>// m - margin | p - padding
+// l - left | r - right | t - top | b -bottom | x - horizontal | y - vertical | a - all
+
+.m-l-10		 // margin-left-10px
+.m-y-10		// margin-vertical-10px
+.p-x-10		// margin-horizontal-10px
+.p-a-10		// margin-all-10px
+</code></pre></div><p>设置好了规则,下来我们就使用less来实现我们的样式库</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@padding-direction<span class="token punctuation">:</span></span> t<span class="token punctuation">,</span> b<span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
+<span class="token variable">@min-padding-value<span class="token punctuation">:</span></span> 1<span class="token punctuation">;</span>
+<span class="token variable">@max-padding-value<span class="token punctuation">:</span></span> 80<span class="token punctuation">;</span>
+
+<span class="token selector">.padding-direction-loop(<span class="token variable">@data</span>,  <span class="token variable">@value</span>, <span class="token variable">@i</span>: 1) when(<span class="token variable">@i</span> =&lt; length(<span class="token variable">@data</span>))</span> <span class="token punctuation">{</span>
+    <span class="token variable">@direction<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token selector">.p-@{direction}-@{value} when (<span class="token variable">@direction</span> = l)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{value} when (<span class="token variable">@direction</span> = r)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding-right</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{value} when (<span class="token variable">@direction</span> = t)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding-top</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{item} when (<span class="token variable">@direction</span> = b)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding-bottom</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{item} when (<span class="token variable">@direction</span> = x)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> 0 <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{item} when (<span class="token variable">@direction</span> = y)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px 0<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    .<span class="token function">padding-direction-loop</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@value</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.padding-loop(<span class="token variable">@n</span>, <span class="token variable">@i</span>: <span class="token variable">@min-padding-value</span>) when(<span class="token variable">@i</span> =&lt; <span class="token variable">@n</span> )</span> <span class="token punctuation">{</span>
+    <span class="token selector">.p-a-@{i}</span> <span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> 1px <span class="token operator">*</span> <span class="token variable">@i</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    .<span class="token function">padding-direction-loop</span><span class="token punctuation">(</span><span class="token variable">@padding-direction</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token mixin-usage function">.padding-loop</span><span class="token punctuation">(</span><span class="token variable">@n</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.<span class="token function">padding-loop</span><span class="token punctuation">(</span><span class="token variable">@max-padding-value</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>通过设置<code>@min-padding-value</code>和<code>@max-padding-value</code>我们设定了具体支持的大小范围.<code>@padding-direction</code>是我们支持的方向,其中<code>a</code>在外侧循环实现了所以没有放在<code>padding-direction-loop</code>中.</p> <p>通过<code>padding-direction-loop</code>来生成对应方向的样式,需要注意的是<code>.padding-loop</code>循环嵌套着<code>.padding-direction-loop</code>的循环,其中<code>.padding-loop</code>负责生成每个大小的样式,而<code>padding-direction-loop</code>负责生成了每个方向的样式.</p> <p>我们也可以设置一些常用值来保持我们页面中样式的统一性</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@size<span class="token punctuation">:</span></span> small<span class="token punctuation">,</span> default<span class="token punctuation">,</span> large<span class="token punctuation">;</span>
+<span class="token variable">@padding-direction<span class="token punctuation">:</span></span> t<span class="token punctuation">,</span> b<span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
+<span class="token variable">@padding-value<span class="token punctuation">:</span></span>5px 10px 15px<span class="token punctuation">;</span>
+
+<span class="token selector">.padding-direction-iterate(<span class="token variable">@data</span>, <span class="token variable">@item</span>, <span class="token variable">@value</span>, <span class="token variable">@i</span>: 1)
+    when(<span class="token variable">@i</span> =&lt; length(<span class="token variable">@data</span>))</span> <span class="token punctuation">{</span>
+    <span class="token variable">@direction<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token selector">.p-@{direction}-@{item}</span> <span class="token punctuation">{</span>
+        <span class="token property">padding-@{direction}</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{item} when (<span class="token variable">@direction</span> = l)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{item} when (<span class="token variable">@direction</span> = r)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding-right</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{item} when (<span class="token variable">@direction</span> = t)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding-top</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{item} when (<span class="token variable">@direction</span> = b)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding-bottom</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{item} when (<span class="token variable">@direction</span> = x)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> 0 <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.p-@{direction}-@{item} when (<span class="token variable">@direction</span> = y)</span> <span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token variable">@value</span> 0<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    .<span class="token function">padding-direction-iterate</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span>  <span class="token variable">@item</span><span class="token punctuation">,</span> <span class="token variable">@value</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.padding-iterate(<span class="token variable">@data</span>, <span class="token variable">@i</span>: 1) when(<span class="token variable">@i</span> =&lt; length(<span class="token variable">@data</span>))</span> <span class="token punctuation">{</span>
+    <span class="token variable">@item<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">@value<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@padding-value</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token selector">.p-a-@{item}</span> <span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    .<span class="token function">padding-direction-iterate</span><span class="token punctuation">(</span><span class="token variable">@padding-direction</span><span class="token punctuation">,</span> <span class="token variable">@item</span><span class="token punctuation">,</span> <span class="token variable">@value</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token mixin-usage function">.padding-iterate</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.<span class="token function">padding-iterate</span><span class="token punctuation">(</span><span class="token variable">@size</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>我们使用了上面类似的方法,不过我们没有设置大小的范围,而是使用<code>small</code>, <code>default</code>, <code>large</code>来设置了三组默认只尺寸,这样我们在页面中可以使用到统一大小的布局样式.</p> <div class="language- extra-class"><pre class="language-text"><code>.p-x-small
+.p-a-large
+.p-r-default
+</code></pre></div><p>我们对margin也进行添加类似的操作,就可以实现我们之前设计的样式规则.</p> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@size<span class="token punctuation">:</span></span> small<span class="token punctuation">,</span> default<span class="token punctuation">,</span> large<span class="token punctuation">;</span>
+<span class="token variable">@margin-direction<span class="token punctuation">:</span></span> t<span class="token punctuation">,</span> b<span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
+<span class="token variable">@margin-value<span class="token punctuation">:</span></span>5px 10px 15px<span class="token punctuation">;</span>
+
+<span class="token selector">.margin-direction-iterate(<span class="token variable">@data</span>, <span class="token variable">@item</span>, <span class="token variable">@value</span>, <span class="token variable">@i</span>: 1)
+    when(<span class="token variable">@i</span> =&lt; length(<span class="token variable">@data</span>))</span> <span class="token punctuation">{</span>
+    <span class="token variable">@direction<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token selector">.m-@{direction}-@{item}</span> <span class="token punctuation">{</span>
+        <span class="token property">margin-@{direction}</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{item} when (<span class="token variable">@direction</span> = l)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{item} when (<span class="token variable">@direction</span> = r)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{item} when (<span class="token variable">@direction</span> = t)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{item} when (<span class="token variable">@direction</span> = b)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{item} when (<span class="token variable">@direction</span> = x)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 0 <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{item} when (<span class="token variable">@direction</span> = y)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token variable">@value</span> 0<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    .<span class="token function">margin-direction-iterate</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span>  <span class="token variable">@item</span><span class="token punctuation">,</span> <span class="token variable">@value</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.margin-iterate(<span class="token variable">@data</span>, <span class="token variable">@i</span>: 1) when(<span class="token variable">@i</span> =&lt; length(<span class="token variable">@data</span>))</span> <span class="token punctuation">{</span>
+    <span class="token variable">@item<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">@value<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@margin-value</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token selector">.m-a-@{item}</span> <span class="token punctuation">{</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token variable">@value</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    .<span class="token function">margin-direction-iterate</span><span class="token punctuation">(</span><span class="token variable">@margin-direction</span><span class="token punctuation">,</span> <span class="token variable">@item</span><span class="token punctuation">,</span> <span class="token variable">@value</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token mixin-usage function">.margin-iterate</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.<span class="token function">margin-iterate</span><span class="token punctuation">(</span><span class="token variable">@size</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// #endregion;</span>
+
+
+<span class="token variable">@margin-direction<span class="token punctuation">:</span></span> t<span class="token punctuation">,</span> b<span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
+<span class="token variable">@min-margin-value<span class="token punctuation">:</span></span> 1<span class="token punctuation">;</span>
+<span class="token variable">@max-margin-value<span class="token punctuation">:</span></span> 80<span class="token punctuation">;</span>
+
+<span class="token selector">.margin-direction-loop(<span class="token variable">@data</span>,  <span class="token variable">@value</span>, <span class="token variable">@i</span>: 1) when(<span class="token variable">@i</span> =&lt; length(<span class="token variable">@data</span>))</span> <span class="token punctuation">{</span>
+    <span class="token variable">@margin<span class="token punctuation">:</span></span> <span class="token function">extract</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token selector">.m-@{direction}-@{value} when (<span class="token variable">@direction</span> = l)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{value} when (<span class="token variable">@direction</span> = r)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{value} when (<span class="token variable">@direction</span> = t)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{item} when (<span class="token variable">@direction</span> = b)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{item} when (<span class="token variable">@direction</span> = x)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 0 <span class="token variable">@value</span> <span class="token operator">*</span> 1px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.m-@{direction}-@{item} when (<span class="token variable">@direction</span> = y)</span> <span class="token punctuation">{</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token variable">@value</span> <span class="token operator">*</span> 1px 0<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    .<span class="token function">margin-direction-loop</span><span class="token punctuation">(</span><span class="token variable">@data</span><span class="token punctuation">,</span> <span class="token variable">@value</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.margin-loop(<span class="token variable">@n</span>, <span class="token variable">@i</span>: <span class="token variable">@min-margin-value</span>) when(<span class="token variable">@i</span> =&lt; <span class="token variable">@n</span> )</span> <span class="token punctuation">{</span>
+    <span class="token selector">.m-a-@{i}</span> <span class="token punctuation">{</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 1px <span class="token operator">*</span> <span class="token variable">@i</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    .<span class="token function">margin-direction-loop</span><span class="token punctuation">(</span><span class="token variable">@margin-direction</span><span class="token punctuation">,</span> <span class="token variable">@i</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token mixin-usage function">.margin-loop</span><span class="token punctuation">(</span><span class="token variable">@n</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token variable">@i</span> <span class="token operator">+</span> 1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.<span class="token function">margin-loop</span><span class="token punctuation">(</span><span class="token variable">@max-margin-value</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// #endregion</span>
+</code></pre></div><p>好了,这样我们就拥有了一套基础的样式库,方便我们在项目中快速开发,使用Sass也是类似的实现逻辑,只需要按对应的函数进行实现就好.</p></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7e25505e.js" defer></script><script src="/assets/js/3.4c456c83.js" defer></script><script src="/assets/js/98.37ffbc3f.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>0x-start-project源码学习 - 8 | 紫菜苔de前端小馆</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.87941fce.css" as="style"><link rel="preload" href="/assets/js/app.7e25505e.js" as="script"><link rel="preload" href="/assets/js/3.4c456c83.js" as="script"><link rel="preload" href="/assets/js/65.1251d365.js" as="script"><link rel="prefetch" href="/assets/js/1.7f9baa1d.js"><link rel="prefetch" href="/assets/js/10.b3078e71.js"><link rel="prefetch" href="/assets/js/100.d8ae016d.js"><link rel="prefetch" href="/assets/js/101.f6577f56.js"><link rel="prefetch" href="/assets/js/102.24046e40.js"><link rel="prefetch" href="/assets/js/103.d5b9915f.js"><link rel="prefetch" href="/assets/js/104.6d9317fc.js"><link rel="prefetch" href="/assets/js/105.1c735d52.js"><link rel="prefetch" href="/assets/js/106.553f3416.js"><link rel="prefetch" href="/assets/js/107.2ff9089f.js"><link rel="prefetch" href="/assets/js/108.72334a91.js"><link rel="prefetch" href="/assets/js/109.ab5b89d9.js"><link rel="prefetch" href="/assets/js/11.48b38e03.js"><link rel="prefetch" href="/assets/js/110.c00c4692.js"><link rel="prefetch" href="/assets/js/111.054f232b.js"><link rel="prefetch" href="/assets/js/112.348fdc76.js"><link rel="prefetch" href="/assets/js/113.2666954c.js"><link rel="prefetch" href="/assets/js/114.8401f8aa.js"><link rel="prefetch" href="/assets/js/115.7a7040eb.js"><link rel="prefetch" href="/assets/js/116.4c68494b.js"><link rel="prefetch" href="/assets/js/117.628714f4.js"><link rel="prefetch" href="/assets/js/118.2a187c2e.js"><link rel="prefetch" href="/assets/js/119.35c2bc90.js"><link rel="prefetch" href="/assets/js/12.443612ee.js"><link rel="prefetch" href="/assets/js/120.d049d227.js"><link rel="prefetch" href="/assets/js/121.48041260.js"><link rel="prefetch" href="/assets/js/122.8be84181.js"><link rel="prefetch" href="/assets/js/123.bf0e653c.js"><link rel="prefetch" href="/assets/js/124.44ed450f.js"><link rel="prefetch" href="/assets/js/125.09870bea.js"><link rel="prefetch" href="/assets/js/126.42a4886a.js"><link rel="prefetch" href="/assets/js/127.af7ff8a1.js"><link rel="prefetch" href="/assets/js/128.7291d4f2.js"><link rel="prefetch" href="/assets/js/129.c49e42e3.js"><link rel="prefetch" href="/assets/js/13.dadac269.js"><link rel="prefetch" href="/assets/js/130.e1ee2b4b.js"><link rel="prefetch" href="/assets/js/131.27c50567.js"><link rel="prefetch" href="/assets/js/132.79c2b4e0.js"><link rel="prefetch" href="/assets/js/133.df0574a4.js"><link rel="prefetch" href="/assets/js/134.f38f6bca.js"><link rel="prefetch" href="/assets/js/14.e80ad288.js"><link rel="prefetch" href="/assets/js/15.0f63582e.js"><link rel="prefetch" href="/assets/js/16.0b17d178.js"><link rel="prefetch" href="/assets/js/17.e0125a2a.js"><link rel="prefetch" href="/assets/js/18.8a42eed8.js"><link rel="prefetch" href="/assets/js/19.15a10742.js"><link rel="prefetch" href="/assets/js/20.b7b1d0f5.js"><link rel="prefetch" href="/assets/js/21.40791261.js"><link rel="prefetch" href="/assets/js/22.f2c95780.js"><link rel="prefetch" href="/assets/js/23.ac518c9f.js"><link rel="prefetch" href="/assets/js/24.1dae90a3.js"><link rel="prefetch" href="/assets/js/25.efc09146.js"><link rel="prefetch" href="/assets/js/26.ab86d874.js"><link rel="prefetch" href="/assets/js/27.e5f565e9.js"><link rel="prefetch" href="/assets/js/28.0469e9c4.js"><link rel="prefetch" href="/assets/js/29.a8de8547.js"><link rel="prefetch" href="/assets/js/30.c0475b4a.js"><link rel="prefetch" href="/assets/js/31.b5eb0553.js"><link rel="prefetch" href="/assets/js/32.9c19ae0e.js"><link rel="prefetch" href="/assets/js/33.b1ed7508.js"><link rel="prefetch" href="/assets/js/34.1e16e05c.js"><link rel="prefetch" href="/assets/js/35.293091db.js"><link rel="prefetch" href="/assets/js/36.252b615a.js"><link rel="prefetch" href="/assets/js/37.1cd8996a.js"><link rel="prefetch" href="/assets/js/38.167a82a3.js"><link rel="prefetch" href="/assets/js/39.33db9824.js"><link rel="prefetch" href="/assets/js/4.54882aa9.js"><link rel="prefetch" href="/assets/js/40.450d32a0.js"><link rel="prefetch" href="/assets/js/41.9287a314.js"><link rel="prefetch" href="/assets/js/42.141e28e4.js"><link rel="prefetch" href="/assets/js/43.8a75dd80.js"><link rel="prefetch" href="/assets/js/44.3ee27bf5.js"><link rel="prefetch" href="/assets/js/45.4a481968.js"><link rel="prefetch" href="/assets/js/46.856423a7.js"><link rel="prefetch" href="/assets/js/47.f5eecad5.js"><link rel="prefetch" href="/assets/js/48.bf2e2c37.js"><link rel="prefetch" href="/assets/js/49.9de65ad2.js"><link rel="prefetch" href="/assets/js/5.394b0d79.js"><link rel="prefetch" href="/assets/js/50.5717ea36.js"><link rel="prefetch" href="/assets/js/51.559ab86e.js"><link rel="prefetch" href="/assets/js/52.fa636028.js"><link rel="prefetch" href="/assets/js/53.855c5365.js"><link rel="prefetch" href="/assets/js/54.479224a9.js"><link rel="prefetch" href="/assets/js/55.82303205.js"><link rel="prefetch" href="/assets/js/56.06703298.js"><link rel="prefetch" href="/assets/js/57.834a7c69.js"><link rel="prefetch" href="/assets/js/58.38a6ec3d.js"><link rel="prefetch" href="/assets/js/59.d9b4b32f.js"><link rel="prefetch" href="/assets/js/6.c3665a69.js"><link rel="prefetch" href="/assets/js/60.f93eef75.js"><link rel="prefetch" href="/assets/js/61.fc7d627b.js"><link rel="prefetch" href="/assets/js/62.37562b69.js"><link rel="prefetch" href="/assets/js/63.71270651.js"><link rel="prefetch" href="/assets/js/64.13e7ae2c.js"><link rel="prefetch" href="/assets/js/66.31ee93bf.js"><link rel="prefetch" href="/assets/js/67.66ee58aa.js"><link rel="prefetch" href="/assets/js/68.c00ea48a.js"><link rel="prefetch" href="/assets/js/69.06818970.js"><link rel="prefetch" href="/assets/js/7.6efe852a.js"><link rel="prefetch" href="/assets/js/70.c3da057f.js"><link rel="prefetch" href="/assets/js/71.4a192e57.js"><link rel="prefetch" href="/assets/js/72.66c8fbc5.js"><link rel="prefetch" href="/assets/js/73.faf61deb.js"><link rel="prefetch" href="/assets/js/74.e3a9223e.js"><link rel="prefetch" href="/assets/js/75.b72d7462.js"><link rel="prefetch" href="/assets/js/76.2cdf4ef4.js"><link rel="prefetch" href="/assets/js/77.8cd6514e.js"><link rel="prefetch" href="/assets/js/78.7ca132ea.js"><link rel="prefetch" href="/assets/js/79.41e2ac49.js"><link rel="prefetch" href="/assets/js/8.53b5f5e2.js"><link rel="prefetch" href="/assets/js/80.13b4e376.js"><link rel="prefetch" href="/assets/js/81.dd6a6ef0.js"><link rel="prefetch" href="/assets/js/82.09201718.js"><link rel="prefetch" href="/assets/js/83.4605bf24.js"><link rel="prefetch" href="/assets/js/84.44fd975f.js"><link rel="prefetch" href="/assets/js/85.e5dc6b5f.js"><link rel="prefetch" href="/assets/js/86.0e2bc0cc.js"><link rel="prefetch" href="/assets/js/87.6373beea.js"><link rel="prefetch" href="/assets/js/88.43f718d2.js"><link rel="prefetch" href="/assets/js/89.59462d75.js"><link rel="prefetch" href="/assets/js/9.72eda18e.js"><link rel="prefetch" href="/assets/js/90.8136b873.js"><link rel="prefetch" href="/assets/js/91.3216e3ce.js"><link rel="prefetch" href="/assets/js/92.94ec4c29.js"><link rel="prefetch" href="/assets/js/93.712e48a3.js"><link rel="prefetch" href="/assets/js/94.a674e097.js"><link rel="prefetch" href="/assets/js/95.e365ad29.js"><link rel="prefetch" href="/assets/js/96.eb2961b1.js"><link rel="prefetch" href="/assets/js/97.cf9e240e.js"><link rel="prefetch" href="/assets/js/98.37ffbc3f.js"><link rel="prefetch" href="/assets/js/99.ad9f19e6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.87941fce.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container flex-row"><div class="sider-container"><div class="slider flex-column justify-content-center align-items-center"><div class="avatar"><img src="/avatar.jpg"></div> <div class="title">
+        紫菜苔de前端小馆
+    </div></div></div> <div class="post-container flex-auto" data-v-5185f74d><div class="title-container" data-v-5185f74d><div class="title" data-v-5185f74d>0x-start-project源码学习 - 8</div> <div class="date" data-v-5185f74d>2019年03月09日 19:03</div></div> <div class="content-container" data-v-5185f74d><div class="content__default" data-v-5185f74d><p>还有一种场景的叫做<code>dutchAuction</code>,翻译时荷兰式拍卖，也就是减价拍卖，由卖家给出开始拍卖的价格以及最低价格，随着时间价格会一路走低，一直到最低拍卖价。
+在0x中这种交易其实也是由<code>match order</code>的方式完成，不过实时价格由拍卖合约确定</p> <div class="language- extra-class"><pre class="language-text"><code>const auctionDetails = await contractWrappers.dutchAuction.getAuctionDetailsAsync(sellSignedOrder);
+const currentAuctionAmount = auctionDetails.currentAmount;
+</code></pre></div><p>卖家通过确定拍卖资产，拍卖金额，拍卖开始时间，通过<code>dutchAuctionWrapper.encodeDutchAuctionAssetData</code>将数据打包为拍卖资产，将拍卖资产的订单签名发布。之后由买方通过<code>contractWrappers.dutchAuction</code>获取实时拍卖价格，创建买方订单并进行签名，通过<code>match order</code>完成订单交易。</p> <p>具体场景源码如下:</p> <div class="language- extra-class"><pre class="language-text"><code>PrintUtils.printScenario('Dutch Auction');
+    // Initialize the ContractWrappers, this provides helper functions around calling
+    // 0x contracts as well as ERC20/ERC721 token contracts on the blockchain
+    const contractWrappers = new ContractWrappers(providerEngine, { networkId: NETWORK_CONFIGS.networkId });
+    // Initialize the Web3Wrapper, this provides helper functions around fetching
+    // account information, balances, general contract logs
+    const web3Wrapper = new Web3Wrapper(providerEngine);
+    // 获得卖方，买方地址
+    const [sellMaker, buyMaker] = await web3Wrapper.getAvailableAddressesAsync();
+    const zrxTokenAddress = contractAddresses.zrxToken;
+    const etherTokenAddress = contractAddresses.etherToken;
+    const printUtils = new PrintUtils(
+        web3Wrapper,
+        contractWrappers,
+        { sellMaker, buyMaker },
+        { WETH: etherTokenAddress, ZRX: zrxTokenAddress },
+    );
+    printUtils.printAccounts();
+
+    // the amount the maker is selling of maker asset
+    const makerAssetAmount = Web3Wrapper.toBaseUnitAmount(new BigNumber(10), DECIMALS);
+    // the initial opening price of the auction
+    // 拍卖初始金额
+    const auctionBeginAmount = Web3Wrapper.toBaseUnitAmount(new BigNumber(1), DECIMALS);
+    // the final amount at the end of the auction
+    // 拍卖下限金额
+    const auctionEndAmount = Web3Wrapper.toBaseUnitAmount(new BigNumber(0.1), DECIMALS);
+    // 0x v2 uses hex encoded asset data strings to encode all the information needed to identify an asset
+    // 设置交易资产
+    const makerAssetData = assetDataUtils.encodeERC20AssetData(zrxTokenAddress);
+    const takerAssetData = assetDataUtils.encodeERC20AssetData(etherTokenAddress);
+    // Begin the auction ten minutes ago
+    // 10分钟前秒数
+    const auctionBeginTimeSeconds = new BigNumber(Date.now() - TEN_MINUTES_MS)
+        .div(ONE_SECOND_MS)
+        .integerValue(BigNumber.ROUND_CEIL);
+    // Additional data is encoded in the maker asset data, this includes the begin time and begin amount
+    // for the auction
+    // 生成拍卖数据，资产类型，开始拍卖时间，开始拍卖金额
+    const dutchAuctionEncodedAssetData = DutchAuctionWrapper.encodeDutchAuctionAssetData(
+        makerAssetData,
+        auctionBeginTimeSeconds,
+        auctionBeginAmount,
+    );
+    let txHash;
+    let txReceipt;
+
+    // Allow the 0x ERC20 Proxy to move ZRX on behalf of makerAccount
+    // 对0x进行资产授权
+    const sellMakerZRXApprovalTxHash = await contractWrappers.erc20Token.setUnlimitedProxyAllowanceAsync(
+        zrxTokenAddress,
+        sellMaker,
+    );
+    await printUtils.awaitTransactionMinedSpinnerAsync('Sell Maker ZRX Approval', sellMakerZRXApprovalTxHash);
+
+    // Approve the ERC20 Proxy to move WETH for rightMaker
+    const buyMakerWETHApprovalTxHash = await contractWrappers.erc20Token.setUnlimitedProxyAllowanceAsync(
+        etherTokenAddress,
+        buyMaker,
+    );
+    await printUtils.awaitTransactionMinedSpinnerAsync('Buy Maker WETH Approval', buyMakerWETHApprovalTxHash);
+
+    // Convert ETH into WETH for taker by depositing ETH into the WETH contract
+    const buyMakerWETHDepositTxHash = await contractWrappers.etherToken.depositAsync(
+        etherTokenAddress,
+        auctionBeginAmount,
+        buyMaker,
+    );
+    await printUtils.awaitTransactionMinedSpinnerAsync('Buy Maker WETH Deposit', buyMakerWETHDepositTxHash);
+
+    PrintUtils.printData('Setup', [
+        ['Sell Maker ZRX Approval', sellMakerZRXApprovalTxHash],
+        ['Buy Maker WETH Approval', buyMakerWETHApprovalTxHash],
+        ['Buy Maker WETH Deposit', buyMakerWETHDepositTxHash],
+    ]);
+
+    // Set up the Order and fill it
+    // 生成订单过期时间
+    // 生成交易地址
+    const randomExpiration = getRandomFutureDateInSeconds();
+    const exchangeAddress = contractAddresses.exchange;
+
+    // Create the order
+    // 创建买方订单
+    const sellOrder: Order = {
+        exchangeAddress,
+        makerAddress: sellMaker,
+        // taker address is specified to ensure ONLY the dutch auction contract
+        // can fill this order (ensuring the price given the block time)
+        // taker地址为拍卖合约地址
+        takerAddress: contractWrappers.dutchAuction.address,
+        senderAddress: NULL_ADDRESS,
+        feeRecipientAddress: NULL_ADDRESS,
+        expirationTimeSeconds: randomExpiration,
+        salt: generatePseudoRandomSalt(),
+        makerAssetAmount,
+        // taker asset amount is the auction end price. The Dutch Auction
+        // contract ensures this is filled at the correct amount
+        // taker资产金额为拍卖下限金额
+        takerAssetAmount: auctionEndAmount,
+        // maker asset data is encoded with additional data used by
+        // the Dutch Auction contract
+        // 卖方资产为包含拍卖信息
+        makerAssetData: dutchAuctionEncodedAssetData,
+        takerAssetData,
+        makerFee: ZERO,
+        takerFee: ZERO,
+    };
+    PrintUtils.printData('Sell Order', Object.entries(sellOrder));
+    // Generate the order hash and sign it
+    // 对订单进行签名
+    const sellOrderHashHex = orderHashUtils.getOrderHashHex(sellOrder);
+    const sellOrderSignature = await signatureUtils.ecSignHashAsync(providerEngine, sellOrderHashHex, sellMaker);
+    const sellSignedOrder = { ...sellOrder, signature: sellOrderSignature };
+
+    // Create the buy order
+    // 因为价格随时间变化，通过getAuctionDetailsAsyn获取当前的价格信息
+    const auctionDetails = await contractWrappers.dutchAuction.getAuctionDetailsAsync(sellSignedOrder);
+    const currentAuctionAmount = auctionDetails.currentAmount;
+    // The buyer creates a matching order, specifying the current auction amount
+    // 创建买方订单
+    const buyOrder: Order = {
+        ...sellOrder,
+        makerAddress: buyMaker,
+        makerAssetData: sellOrder.takerAssetData,
+        takerAssetData: sellOrder.makerAssetData,
+        makerAssetAmount: currentAuctionAmount,
+        takerAssetAmount: sellOrder.makerAssetAmount,
+    };
+    PrintUtils.printData('Buy Order', Object.entries(buyOrder));
+
+    // Generate the order hash and sign it
+    // 签名买方订单
+    const buyOrderHashHex = orderHashUtils.getOrderHashHex(buyOrder);
+    const buyOrderSignature = await signatureUtils.ecSignHashAsync(providerEngine, buyOrderHashHex, buyMaker);
+    const buySignedOrder = { ...buyOrder, signature: buyOrderSignature };
+
+    // Print out the Balances and Allowances
+    await printUtils.fetchAndPrintContractAllowancesAsync();
+    await printUtils.fetchAndPrintContractBalancesAsync();
+    // Match the orders via the Dutch Auction contract
+    // 通过匹配订单完成交易
+    txHash = await contractWrappers.dutchAuction.matchOrdersAsync(buySignedOrder, sellSignedOrder, buyMaker, {
+        gasLimit: TX_DEFAULTS.gas,
+    });
+
+    txReceipt = await printUtils.awaitTransactionMinedSpinnerAsync('DutchAuction', txHash);
+    printUtils.printTransaction('DutchAuction', txReceipt, [
+        ['sell orderHash', sellOrderHashHex],
+        ['buy orderHash', buyOrderHashHex],
+    ]);
+
+    // Print the Balances
+    await printUtils.fetchAndPrintContractBalancesAsync();
+
+    // Stop the Provider Engine
+    providerEngine.stop();
+</code></pre></div></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7e25505e.js" defer></script><script src="/assets/js/3.4c456c83.js" defer></script><script src="/assets/js/65.1251d365.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>[译]stylus文档翻译 - 4.运算符 | 紫菜苔de前端小馆</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.87941fce.css" as="style"><link rel="preload" href="/assets/js/app.7e25505e.js" as="script"><link rel="preload" href="/assets/js/3.4c456c83.js" as="script"><link rel="preload" href="/assets/js/120.d049d227.js" as="script"><link rel="prefetch" href="/assets/js/1.7f9baa1d.js"><link rel="prefetch" href="/assets/js/10.b3078e71.js"><link rel="prefetch" href="/assets/js/100.d8ae016d.js"><link rel="prefetch" href="/assets/js/101.f6577f56.js"><link rel="prefetch" href="/assets/js/102.24046e40.js"><link rel="prefetch" href="/assets/js/103.d5b9915f.js"><link rel="prefetch" href="/assets/js/104.6d9317fc.js"><link rel="prefetch" href="/assets/js/105.1c735d52.js"><link rel="prefetch" href="/assets/js/106.553f3416.js"><link rel="prefetch" href="/assets/js/107.2ff9089f.js"><link rel="prefetch" href="/assets/js/108.72334a91.js"><link rel="prefetch" href="/assets/js/109.ab5b89d9.js"><link rel="prefetch" href="/assets/js/11.48b38e03.js"><link rel="prefetch" href="/assets/js/110.c00c4692.js"><link rel="prefetch" href="/assets/js/111.054f232b.js"><link rel="prefetch" href="/assets/js/112.348fdc76.js"><link rel="prefetch" href="/assets/js/113.2666954c.js"><link rel="prefetch" href="/assets/js/114.8401f8aa.js"><link rel="prefetch" href="/assets/js/115.7a7040eb.js"><link rel="prefetch" href="/assets/js/116.4c68494b.js"><link rel="prefetch" href="/assets/js/117.628714f4.js"><link rel="prefetch" href="/assets/js/118.2a187c2e.js"><link rel="prefetch" href="/assets/js/119.35c2bc90.js"><link rel="prefetch" href="/assets/js/12.443612ee.js"><link rel="prefetch" href="/assets/js/121.48041260.js"><link rel="prefetch" href="/assets/js/122.8be84181.js"><link rel="prefetch" href="/assets/js/123.bf0e653c.js"><link rel="prefetch" href="/assets/js/124.44ed450f.js"><link rel="prefetch" href="/assets/js/125.09870bea.js"><link rel="prefetch" href="/assets/js/126.42a4886a.js"><link rel="prefetch" href="/assets/js/127.af7ff8a1.js"><link rel="prefetch" href="/assets/js/128.7291d4f2.js"><link rel="prefetch" href="/assets/js/129.c49e42e3.js"><link rel="prefetch" href="/assets/js/13.dadac269.js"><link rel="prefetch" href="/assets/js/130.e1ee2b4b.js"><link rel="prefetch" href="/assets/js/131.27c50567.js"><link rel="prefetch" href="/assets/js/132.79c2b4e0.js"><link rel="prefetch" href="/assets/js/133.df0574a4.js"><link rel="prefetch" href="/assets/js/134.f38f6bca.js"><link rel="prefetch" href="/assets/js/14.e80ad288.js"><link rel="prefetch" href="/assets/js/15.0f63582e.js"><link rel="prefetch" href="/assets/js/16.0b17d178.js"><link rel="prefetch" href="/assets/js/17.e0125a2a.js"><link rel="prefetch" href="/assets/js/18.8a42eed8.js"><link rel="prefetch" href="/assets/js/19.15a10742.js"><link rel="prefetch" href="/assets/js/20.b7b1d0f5.js"><link rel="prefetch" href="/assets/js/21.40791261.js"><link rel="prefetch" href="/assets/js/22.f2c95780.js"><link rel="prefetch" href="/assets/js/23.ac518c9f.js"><link rel="prefetch" href="/assets/js/24.1dae90a3.js"><link rel="prefetch" href="/assets/js/25.efc09146.js"><link rel="prefetch" href="/assets/js/26.ab86d874.js"><link rel="prefetch" href="/assets/js/27.e5f565e9.js"><link rel="prefetch" href="/assets/js/28.0469e9c4.js"><link rel="prefetch" href="/assets/js/29.a8de8547.js"><link rel="prefetch" href="/assets/js/30.c0475b4a.js"><link rel="prefetch" href="/assets/js/31.b5eb0553.js"><link rel="prefetch" href="/assets/js/32.9c19ae0e.js"><link rel="prefetch" href="/assets/js/33.b1ed7508.js"><link rel="prefetch" href="/assets/js/34.1e16e05c.js"><link rel="prefetch" href="/assets/js/35.293091db.js"><link rel="prefetch" href="/assets/js/36.252b615a.js"><link rel="prefetch" href="/assets/js/37.1cd8996a.js"><link rel="prefetch" href="/assets/js/38.167a82a3.js"><link rel="prefetch" href="/assets/js/39.33db9824.js"><link rel="prefetch" href="/assets/js/4.54882aa9.js"><link rel="prefetch" href="/assets/js/40.450d32a0.js"><link rel="prefetch" href="/assets/js/41.9287a314.js"><link rel="prefetch" href="/assets/js/42.141e28e4.js"><link rel="prefetch" href="/assets/js/43.8a75dd80.js"><link rel="prefetch" href="/assets/js/44.3ee27bf5.js"><link rel="prefetch" href="/assets/js/45.4a481968.js"><link rel="prefetch" href="/assets/js/46.856423a7.js"><link rel="prefetch" href="/assets/js/47.f5eecad5.js"><link rel="prefetch" href="/assets/js/48.bf2e2c37.js"><link rel="prefetch" href="/assets/js/49.9de65ad2.js"><link rel="prefetch" href="/assets/js/5.394b0d79.js"><link rel="prefetch" href="/assets/js/50.5717ea36.js"><link rel="prefetch" href="/assets/js/51.559ab86e.js"><link rel="prefetch" href="/assets/js/52.fa636028.js"><link rel="prefetch" href="/assets/js/53.855c5365.js"><link rel="prefetch" href="/assets/js/54.479224a9.js"><link rel="prefetch" href="/assets/js/55.82303205.js"><link rel="prefetch" href="/assets/js/56.06703298.js"><link rel="prefetch" href="/assets/js/57.834a7c69.js"><link rel="prefetch" href="/assets/js/58.38a6ec3d.js"><link rel="prefetch" href="/assets/js/59.d9b4b32f.js"><link rel="prefetch" href="/assets/js/6.c3665a69.js"><link rel="prefetch" href="/assets/js/60.f93eef75.js"><link rel="prefetch" href="/assets/js/61.fc7d627b.js"><link rel="prefetch" href="/assets/js/62.37562b69.js"><link rel="prefetch" href="/assets/js/63.71270651.js"><link rel="prefetch" href="/assets/js/64.13e7ae2c.js"><link rel="prefetch" href="/assets/js/65.1251d365.js"><link rel="prefetch" href="/assets/js/66.31ee93bf.js"><link rel="prefetch" href="/assets/js/67.66ee58aa.js"><link rel="prefetch" href="/assets/js/68.c00ea48a.js"><link rel="prefetch" href="/assets/js/69.06818970.js"><link rel="prefetch" href="/assets/js/7.6efe852a.js"><link rel="prefetch" href="/assets/js/70.c3da057f.js"><link rel="prefetch" href="/assets/js/71.4a192e57.js"><link rel="prefetch" href="/assets/js/72.66c8fbc5.js"><link rel="prefetch" href="/assets/js/73.faf61deb.js"><link rel="prefetch" href="/assets/js/74.e3a9223e.js"><link rel="prefetch" href="/assets/js/75.b72d7462.js"><link rel="prefetch" href="/assets/js/76.2cdf4ef4.js"><link rel="prefetch" href="/assets/js/77.8cd6514e.js"><link rel="prefetch" href="/assets/js/78.7ca132ea.js"><link rel="prefetch" href="/assets/js/79.41e2ac49.js"><link rel="prefetch" href="/assets/js/8.53b5f5e2.js"><link rel="prefetch" href="/assets/js/80.13b4e376.js"><link rel="prefetch" href="/assets/js/81.dd6a6ef0.js"><link rel="prefetch" href="/assets/js/82.09201718.js"><link rel="prefetch" href="/assets/js/83.4605bf24.js"><link rel="prefetch" href="/assets/js/84.44fd975f.js"><link rel="prefetch" href="/assets/js/85.e5dc6b5f.js"><link rel="prefetch" href="/assets/js/86.0e2bc0cc.js"><link rel="prefetch" href="/assets/js/87.6373beea.js"><link rel="prefetch" href="/assets/js/88.43f718d2.js"><link rel="prefetch" href="/assets/js/89.59462d75.js"><link rel="prefetch" href="/assets/js/9.72eda18e.js"><link rel="prefetch" href="/assets/js/90.8136b873.js"><link rel="prefetch" href="/assets/js/91.3216e3ce.js"><link rel="prefetch" href="/assets/js/92.94ec4c29.js"><link rel="prefetch" href="/assets/js/93.712e48a3.js"><link rel="prefetch" href="/assets/js/94.a674e097.js"><link rel="prefetch" href="/assets/js/95.e365ad29.js"><link rel="prefetch" href="/assets/js/96.eb2961b1.js"><link rel="prefetch" href="/assets/js/97.cf9e240e.js"><link rel="prefetch" href="/assets/js/98.37ffbc3f.js"><link rel="prefetch" href="/assets/js/99.ad9f19e6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.87941fce.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container flex-row"><div class="sider-container"><div class="slider flex-column justify-content-center align-items-center"><div class="avatar"><img src="/avatar.jpg"></div> <div class="title">
+        紫菜苔de前端小馆
+    </div></div></div> <div class="post-container flex-auto" data-v-5185f74d><div class="title-container" data-v-5185f74d><div class="title" data-v-5185f74d>[译]stylus文档翻译 - 4.运算符</div> <div class="date" data-v-5185f74d>2017年11月01日 19:11</div></div> <div class="content-container" data-v-5185f74d><div class="content__default" data-v-5185f74d><h1 id="运算符"><a href="#运算符" class="header-anchor">#</a> 运算符</h1> <h2 id="运算符优先级"><a href="#运算符优先级" class="header-anchor">#</a> 运算符优先级</h2> <p>下面是运算符优先级表，从高到低：</p> <div class="language- extra-class"><pre class="language-text"><code>.
+[]
+!~+-
+is defined
+** * / %
++ -
+... ..
+&lt;= &gt;= &lt; &gt;
+in
+== is != is not isnt
+is a 
+&amp;&amp; and || or
+?:
+= := ?= += -= 
+not
+if unless
+</code></pre></div><h2 id="一元表达式"><a href="#一元表达式" class="header-anchor">#</a> 一元表达式</h2> <p>下面是一些可用的一元运算符，<code>!</code>,<code>not</code>,<code>-</code>,<code>+</code>,and<code>～</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>!0
+// =&gt; true
+
+!!0
+// =&gt; false
+
+!1
+// =&gt; false
+
+!!5px
+// =&gt; true
+
+-5px
+// =&gt; -5px
+
+--5px
+// =&gt; 5px
+
+not true
+// =&gt; false
+
+not not true
+// =&gt; true
+</code></pre></div> <p>逻辑符<code>not</code>的优先级较低，因此</p> <div class="language- extra-class"><pre class="language-text"><code>a = 0
+b = 1
+
+!a and !b
+// =&gt; false
+//parsed as: (!a) and (!b)
+</code></pre></div><p>看下面</p> <div class="language- extra-class"><pre class="language-text"><code>not a or b
+// =&gt; false
+// parse as :not (a or b)
+</code></pre></div><p>##　二元运算符</p> <p>下标运算符允许我们去通过索引获取表达式内部值(从零开始)，负值可以从表达式中最后的元素开始。</p> <div class="language- extra-class"><pre class="language-text"><code>list = 1 2 3 
+list[0]
+// =&gt; 1
+
+list[-1]
+// =&gt; 3
+</code></pre></div><p>括号表达式可以充当元组(例如<code>(15px,15px),(1,2,3)</code>):</p> <p>下面这个例子是一个使用元组的错误处理(并展示结构的多功能)</p> <div class="language- extra-class"><pre class="language-text"><code>add(a,b)
+    if a is a 'unit' and b is a 'unit'
+        a + b
+    else
+        (error 'a and b must be units!)
+
+body
+    padding add(1,'5')
+    // =&gt; padding:error &quot;a and b must units&quot;
+
+    padding add(1,'5')[0]
+    // =&gt; padding:error;
+
+    padding add(1,'5')[0] == error
+    // =&gt; padding:true;
+
+    padding add(1,'5')[1]
+    // =&gt; padding:&quot;a and b must units&quot;
+</code></pre></div><p>这是一个更复杂的例子.现在我们执行内置函数<code>error()</code>，当标识符(传入的第一个值)等于<code>error</code>时返回错误信息。</p> <div class="language- extra-class"><pre class="language-text"><code>if(val = add(1,'5'))[5] == error
+    error(val[1])
+</code></pre></div><h2 id="范围运算符"><a href="#范围运算符" class="header-anchor">#</a> 范围运算符 .. ...</h2> <p>同事提供这包括(开放)范围运算符(<code>..</code>)和排除(闭合)范围运算符(<code>...</code>)去扩展表达式:</p> <div class="language- extra-class"><pre class="language-text"><code>1..5
+// =&gt; 1 2 3 4 5
+
+1...5
+// =&gt; 1 2 3 4
+
+5..1
+// =&gt; 5 4 3 2 1
+</code></pre></div><h2 id="加减运算符"><a href="#加减运算符" class="header-anchor">#</a> 加减运算符: + -</h2> <p>二元加减运算符会在运算中将单位进行转换，或使用默认字面值。例如<code>5s-2px</code>结果是<code>3s</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>15px -5px
+// =&gt; 10px
+
+5-2
+// =&gt; 3 
+
+5in - 50mm
+// =&gt; 3.3031in
+
+5s - 1000ms
+// =&gt; 4s
+
+20mm + 5in
+// =&gt; 121.6in
+
+&quot;foo &quot; + &quot;bar&quot;
+// =&gt; &quot;foo bar&quot;
+
+&quot;num &quot; + 15
+// =&gt; &quot;num 15&quot;
+</code></pre></div><h2 id="乘法运算符"><a href="#乘法运算符" class="header-anchor">#</a> 乘法运算符: / * %</h2> <div class="language- extra-class"><pre class="language-text"><code>2000ms + (1s * 2)
+// =&gt; 4000ms
+
+5s/2
+// =&gt; 2.5s
+
+4%2
+// =&gt; 0
+</code></pre></div><p>当使用<code>/</code>在一个属性值中，你需要用括号包住它，否则<code>/</code>会按字面含义进行处理(支持CSS<code>line-height</code>):</p> <div class="language- extra-class"><pre class="language-text"><code>font: 14px/1.5
+</code></pre></div><p>但是下面等同于<code>14px</code>÷ <code>1.5</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>font: (14px/1.5);
+</code></pre></div><p>这仅在<code>/</code>运算符时需要.</p> <h2 id="指数"><a href="#指数" class="header-anchor">#</a> 指数: **</h2> <p>下面是指数运算符:</p> <div class="language- extra-class"><pre class="language-text"><code>2 ** 8
+// =&gt; 256
+</code></pre></div><h2 id="相等和关系运算符"><a href="#相等和关系运算符" class="header-anchor">#</a> 相等和关系运算符 : == != &gt;= &lt;= &gt;&lt;</h2> <p>相等运算符可以用在等同的单位，颜色，字符串甚至标识符上。这是一个强大的概念，甚至任意的标识符(像<code>wahoo</code>)可以被当做原子使用。方法可能返回<code>yes</code>或<code>no</code>来代替<code>true</code>和<code>false</code>(但这是不建议的).</p> <div class="language- extra-class"><pre class="language-text"><code>5 == 5
+// =&gt; true
+
+10 &gt; 5
+// =&gt; true
+
+#fff == #fff
+// =&gt; true
+
+true == false
+// =&gt; false
+
+wahoo == yay
+// =&gt; false
+
+wahoo == wahoo
+// =&gt; true
+
+&quot;test&quot; == &quot;test&quot;
+// =&gt; true
+
+true is true
+// =&gt; true
+
+'hey' is not 'bye'
+// =&gt; true
+
+'hey' isnt 'bye'
+// =&gt; true
+
+(foo bar) == (foo bar)
+// =&gt; true
+
+(1 2 3) == (1 2 3)
+// =&gt; true
+
+(1 2 3) == (1 1 3)
+// =&gt; false
+</code></pre></div><p>只有精确地值才可以匹配.例如,<code>0 == false</code> 和 <code>null = false</code> 都是 <code>false</code>.</p> <p>别名:</p> <div class="language- extra-class"><pre class="language-text"><code>== is
+!= is not
+!= isnt
+</code></pre></div><h2 id="真实性"><a href="#真实性" class="header-anchor">#</a> 真实性</h2> <p>在Stylus中几乎大多数都会被解析成<code>true</code>,包括单位后缀，甚至<code>0%</code>,<code>0px</code>,等都将会被解析为<code>true</code>(因为这在Stylus的混合书写和函数中认为单位是有效的是很常见的)</p> <p>然而,<code>0</code>本身在算数中就是<code>false</code>。</p> <p>表达式(或者列表)长度大于1时，被认为是真。</p> <p><code>true</code>的例子:</p> <div class="language- extra-class"><pre class="language-text"><code>0%
+0px
+1px
+-1
+-1px
+hey
+'hey'
+(0 0 0)
+(&quot; &quot;)
+</code></pre></div><p><code>false</code>的例子:</p> <div class="language- extra-class"><pre class="language-text"><code>0
+nullfalser
+''
+</code></pre></div><h2 id="逻辑运算符-and-or"><a href="#逻辑运算符-and-or" class="header-anchor">#</a> 逻辑运算符: &amp;&amp; || and or</h2> <p>逻辑运算符<code>&amp;&amp;</code>和<code>||</code>的别名是<code>and</code>和<code>or</code>,它们优先级相同.</p> <div class="language- extra-class"><pre class="language-text"><code>5 &amp;&amp; 3
+// =&gt; 3
+
+0 || 5
+// =&gt; 5
+
+0 &amp;&amp; 5
+// =&gt; 0
+
+#fff is a 'rgba' and 15 is 'unit'
+// =&gt; true
+</code></pre></div><h2 id="存在运算符-in"><a href="#存在运算符-in" class="header-anchor">#</a> 存在运算符: in</h2> <p>检查运算符左边的内容是否存在于运算符右边的表达式中.</p> <p>简单的例子:</p> <div class="language- extra-class"><pre class="language-text"><code>nums = 1 2 3
+1 in nums
+// =&gt; true
+
+5 in nums
+// =&gt; false
+</code></pre></div><p>一些未定义的标识符:</p> <div class="language- extra-class"><pre class="language-text"><code>words = foo bar baz
+bar in words
+// =&gt; bar
+
+HEY in words
+// =&gt; false
+</code></pre></div><p>同样可以用在元组中:</p> <div class="language- extra-class"><pre class="language-text"><code>vals = (error 'one')(error 'two')
+error in vals
+// =&gt; false
+
+(error 'one') in vals
+// =&gt; true
+
+(error 'two') in vals
+// =&gt; true
+
+(error 'something') in vals
+// =&gt; false
+</code></pre></div><p>在混合书写中的例子:</p> <div class="language- extra-class"><pre class="language-text"><code>pad(types = padding,n=5px)
+    if padding in types
+        padding n
+    if margin in types 
+        margin n
+
+body 
+    pad()
+
+body
+    pad(margin)
+
+body
+    pad(padding margin,10px)
+</code></pre></div><p>解析为:</p> <div class="language- extra-class"><pre class="language-text"><code>body{
+    padding:5px;
+}
+
+body{
+    margin:5px;
+}
+body{
+    padding:10px;
+    margin:10px;
+}
+</code></pre></div><h2 id="条件赋值"><a href="#条件赋值" class="header-anchor">#</a> 条件赋值 ?= :=</h2> <p>条件赋值运算符<code>?=</code>（别名是<code>:=</code>)，让我们定义变量不需要去破坏原来的值(如果存在的话)。这个操作运算符可以扩展为三元中的一个<code>is defined</code>的二元操作。</p> <p>例如,下面是相等的：</p> <div class="language- extra-class"><pre class="language-text"><code>color:=white
+color?=white
+color = color is denfind ? color : white
+</code></pre></div><p>当使用<code>=</code>时，可以简单的赋值:</p> <div class="language- extra-class"><pre class="language-text"><code>color = white
+color = black
+
+color
+// =&gt; black
+</code></pre></div><p>但是当使用<code>?=</code>时，我们第二行就没有效果了(当变量已经被定义):</p> <div class="language- extra-class"><pre class="language-text"><code>color = white
+color ?= black
+
+color
+// =&gt; black
+</code></pre></div><h2 id="实例检查-is-a"><a href="#实例检查-is-a" class="header-anchor">#</a> 实例检查: is a</h2> <p>Stylus提供一个二元操作符是<code>is a</code>用于类型检测。</p> <div class="language- extra-class"><pre class="language-text"><code>15 is a 'unit'
+// =&gt; true
+
+#fff is a 'rgba'
+// =&gt; true
+
+15 is a `rgba'
+// =&gt; false
+</code></pre></div><p>或者我们可以使用内置函数<code>type()</code></p> <div class="language- extra-class"><pre class="language-text"><code>type(#fff) == `rgba`
+// =&gt; true
+</code></pre></div><p>注意:<code>color</code>是唯一的特殊情况，运算符左侧是<code>RGBA</code>或<code>HSLA</code>时，他都为<code>true</code>.</p> <h2 id="变量定义-is-defined"><a href="#变量定义-is-defined" class="header-anchor">#</a> 变量定义: is defined</h2> <p>这个伪二元运算符不接收右边的运算符，也不通过左边进行求值，它允许我们检测变量是否被赋值。</p> <div class="language- extra-class"><pre class="language-text"><code>foo is defined
+// =&gt; false
+
+foo = 15px
+foo is defined
+// =&gt; true
+
+#fff is deined
+// =&gt; 'invalid &quot;is defined&quot; check non-variable #fff'
+</code></pre></div><p>当然我们也可以使用<code>lookup(name)</code>内置函数去实现这个功能-进行动态查找</p> <div class="language- extra-class"><pre class="language-text"><code>name = 'blue'
+lookup('light-' + name)
+// =&gt; null
+
+light-blue = #80e2e9
+lookup('light-' + name)
+// =&gt; #80e2e9
+</code></pre></div><p>操作符是必要的，因为一个未定义的变量仍然会返回一个真值，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>body
+    if ohnoes
+        padding 5px
+</code></pre></div><p>当未定义时，将会将会产生下面的CSS:</p> <div class="language- extra-class"><pre class="language-text"><code>body{
+    padding:5px;
+}
+</code></pre></div><p>当然下面的是安全的:</p> <div class="language- extra-class"><pre class="language-text"><code>body
+    if ohnoes is defined
+        padding 5px
+</code></pre></div><h2 id="三元运算符"><a href="#三元运算符" class="header-anchor">#</a> 三元运算符</h2> <p>三元运算符会运作的和其它大多数语言中期望的一样。他是唯一一个操作三个元素的运算符(条件表达式，真值表达式，假值表达式)</p> <div class="language- extra-class"><pre class="language-text"><code>num = 15
+num ? unit(num,'px'):20px
+// =&gt; 15px
+</code></pre></div><h2 id="强制转换"><a href="#强制转换" class="header-anchor">#</a> 强制转换</h2> <p>作为一个简洁的方式，<code>(expr)</code>语法可以用来替代<code>unit</code>内置函数进行单位强制转换</p> <div class="language- extra-class"><pre class="language-text"><code>body
+    n = 5
+    foo: (n)em
+    foo: (n)%
+    foo: (n+5)%
+    foo: (n*5)px
+    foo: unit(n+5,'%')
+    foo: unit(5+180/2,deg)
+</code></pre></div><h2 id="颜色运算符"><a href="#颜色运算符" class="header-anchor">#</a> 颜色运算符</h2> <p>可以有一个简洁的方式来操作颜色的组成，例如：我们可以对每个RGB值进行运算：</p> <div class="language- extra-class"><pre class="language-text"><code>#0e0 + #0e0
+// =&gt; #0f0
+</code></pre></div><p>另一个例子是通过添加或减去一个百分比值，对亮度值进行调整，使之变亮或变暗：</p> <div class="language- extra-class"><pre class="language-text"><code>#888 + 50%
+// =&gt; #c3c3c3
+
+#888 - 50%
+// =&gt; #444
+</code></pre></div><p>也可以通过添加或者减去一个度数单位(deg)来调整颜色的色调，例如，添加<code>50deg</code>来让这红色的值变成黄色:</p> <div class="language- extra-class"><pre class="language-text"><code>#f00 + 50deg
+// =&gt; #ffd500
+</code></pre></div><p>色值被适当的固定了。例如，我们<code>旋转</code>这色调180度，如果当前值是<code>320deg</code>，那么会变成<code>140deg</code>。</p> <p>我们也可以一次调整多个值，使用<code>rgb()</code>,<code>rgba()</code>,<code>hsl()</code>,<code>hsla()</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>#f00 - rgba(100,0,0,0.5)
+// =&gt; rgba(155,0,0,0.5)
+</code></pre></div><h2 id="格式化字符串"><a href="#格式化字符串" class="header-anchor">#</a> 格式化字符串</h2> <p>字符串格式化运算符<code>%</code>可以用来生成字面量值，通过传递参数给内置函数<code>s()</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>`X::Microsoft::Crap(%s)` % #fc0
+// =&gt; X::Microsoft::Crap(#fc0)
+</code></pre></div><p>多个值需要括号括起来:</p> <div class="language- extra-class"><pre class="language-text"><code>'-webkit-gradident(%s,%s,%s)' % (linear (0,0)(0 100%))
+// =&gt; -webkit-gradient(liner,0 0,0 100%)
+</code></pre></div></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7e25505e.js" defer></script><script src="/assets/js/3.4c456c83.js" defer></script><script src="/assets/js/120.d049d227.js" defer></script>
+  </body>
+</html>

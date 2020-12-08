@@ -38,24 +38,9 @@ module.exports = {
         [
             'vuepress-plugin-typescript',
             {
-                tsLoaderOptions: {
-                    // ts-loader 的所有配置项
-                }
+                tsLoaderOptions: {}
             }
         ],
         ['vuepress-plugin-reading-time']
-        // [
-        //     '@vuepress/last-updated',
-        //     {
-        //         transformer: (timestamp, lang) => {
-        //             const moment = require('moment')
-        //             moment.locale(lang)
-        //             return timestamp
-        //         },
-        //         dateOptions: {
-        //             hours12: false
-        //         }
-        //     }
-        // ]
     ]
 }
