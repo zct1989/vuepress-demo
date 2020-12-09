@@ -2,7 +2,7 @@
 module.exports = {
     title: '紫菜苔de前端小馆',
     markdown: {
-        lineNumbers: true
+        lineNumbers: false
     },
     themeConfig: {
         repo: 'https://githjub.com/vuejs/vuepress',
