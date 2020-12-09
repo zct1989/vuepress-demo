@@ -1,6 +1,9 @@
 // .vuepress/config.js
 module.exports = {
     title: '紫菜苔de前端小馆',
+    markdown: {
+        lineNumbers: true
+    },
     themeConfig: {
         repo: 'https://githjub.com/vuejs/vuepress',
         smoothScroll: true,
