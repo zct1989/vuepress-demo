@@ -30,13 +30,15 @@ module.exports = {
         displayAllHeaders: true,
         activeHeaderLinks: true
     },
-    // configureWebpack: {
-    //     resolve: {
-    //         alias: {
-    //             '~': '/'
-    //         }
-    //     }
-    // },
+    configureWebpack: {
+        optimization: {
+            minimize: true,
+            splitChunks: {
+                minSize: 2000,
+                maxSize: 500000
+            }
+        }
+    },
     plugins: [
         [
             'vuepress-plugin-typescript',
