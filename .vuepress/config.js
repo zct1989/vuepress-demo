@@ -30,13 +30,6 @@ module.exports = {
         displayAllHeaders: true,
         activeHeaderLinks: true
     },
-    // configureWebpack: {
-    //     resolve: {
-    //         alias: {
-    //             '~': '/'
-    //         }
-    //     }
-    // },
     plugins: [
         [
             'vuepress-plugin-typescript',
