@@ -1,5 +1,5 @@
 <template>
-    <div class="theme-container flex-row">
+    <div class="theme-container flex-row flex-nowrap">
         <div class="sider-container">
             <Slider></Slider>
         </div>
