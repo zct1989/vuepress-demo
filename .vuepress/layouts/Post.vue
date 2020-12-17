@@ -1,15 +1,17 @@
 <template>
     <div class="post-container">
-        <div class="title-container">
-            <div class="title">{{ $page.title }}</div>
-            <div class="date">{{ date() }}</div>
-        </div>
+        <div class="post-wrapper">
+            <div class="title-container">
+                <div class="title">{{ $page.title }}</div>
+                <div class="date">{{ date() }}</div>
+            </div>
 
-        <div class="content-container">
-            <Content></Content>
-        </div>
+            <div class="content-container">
+                <Content></Content>
+            </div>
 
-        <page-footer></page-footer>
+            <page-footer></page-footer>
+        </div>
     </div>
 </template>
 
@@ -37,7 +39,11 @@ export default class extends Vue {
 <style lang="less" scoped>
 .post-container {
     background-color: #efefef;
-    padding: 30px;
+    overflow: auto;
+}
+
+.post-wrapper {
+    margin: 30px;
 }
 
 .title-container {
