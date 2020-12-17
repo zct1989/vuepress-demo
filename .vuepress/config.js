@@ -30,6 +30,18 @@ module.exports = {
         displayAllHeaders: true,
         activeHeaderLinks: true
     },
+<<<<<<< HEAD
+=======
+    configureWebpack: {
+        optimization: {
+            minimize: true,
+            splitChunks: {
+                minSize: 2000,
+                maxSize: 500000
+            }
+        }
+    },
+>>>>>>> ba41ba95ac08cacba0d91125827357e473bdb670
     plugins: [
         [
             'vuepress-plugin-typescript',

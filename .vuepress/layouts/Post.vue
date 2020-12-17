@@ -8,6 +8,8 @@
         <div class="content-container">
             <Content></Content>
         </div>
+
+        <page-footer></page-footer>
     </div>
 </template>
 
@@ -15,14 +17,14 @@
 import { Component, Vue } from 'vue-property-decorator'
 import DailyList from '../components/daily-list.vue'
 import PostList from '../components/post-list.vue'
-import Slider from '../components/slider.vue'
+import PageFooter from '../components/page-footer.vue'
 import dayjs from 'dayjs'
 
 @Component({
     components: {
         DailyList,
         PostList,
-        Slider
+        PageFooter
     }
 })
 export default class extends Vue {
