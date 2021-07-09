@@ -39,7 +39,7 @@ export default class PostItem extends Vue {
     mounted() {}
 
     private onEnter() {
-         location.href = this.source.path
+        location.href = this.source.path
         // this.$router.push(this.source.path)
     }
 
@@ -52,6 +52,7 @@ export default class PostItem extends Vue {
 <style lang="less">
 .post-item {
     padding: 20px;
+    min-width: 350px;
 
     .update-time {
         color: #4f4f4f;
