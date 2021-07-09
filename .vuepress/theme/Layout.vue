@@ -64,7 +64,7 @@ export default class extends Vue {
 
 <style lang="less" scoped>
 .footer {
-    padding-bottom: 20px;
+    padding: 20px;
 
     a {
         color: rgba(255, 255, 255, 0.75);
