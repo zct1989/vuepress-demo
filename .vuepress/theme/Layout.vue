@@ -1,9 +1,14 @@
 <template>
-    <div class="theme-container flex-row flex-nowrap">
-        <div class="sider-container">
-            <Slider></Slider>
+    <div class="theme-container ">
+        <div class="flex-row flex-nowrap">
+            <div class="sider-container">
+                <Slider></Slider>
+            </div>
+            <component :is="layout" class="flex-auto"></component>
         </div>
-        <component :is="layout" class="flex-auto"></component>
+        <div class="text-center footer">
+            <a href="http://beian.miit.gov.cn">陕ICP备17002993号-1</a>
+        </div>
     </div>
 </template>
 
@@ -55,4 +60,15 @@ export default class extends Vue {
 @import '~prismjs/themes/prism-tomorrow.css';
 @import '../styles/common.less';
 @import '../styles/layout.less';
+</style>
+
+<style lang="less" scoped>
+.footer {
+    padding-bottom: 20px;
+
+    a {
+        color: rgba(255, 255, 255, 0.75);
+        font-weight: 300;
+    }
+}
 </style>
